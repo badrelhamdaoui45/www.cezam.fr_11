@@ -1,0 +1,791 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/nous-trouver by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:40:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Cezam | 1er réseau de coopération entre élus de cse</title><meta name="description" content="Plus de 6000 CSE adhérents, 1 million de bénéficiaires, proximité, avantages billetterie, vacances, culture, formation d&#039;élus, logiciel ASC..."><link rel="icon" type="image/x-icon" href="favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="index.html" class="menu-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="choix-antenne.html" class="mobile-only"><img src="img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="cezam.html">Accueil</a></li><li><a href="qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="formations-cse.html">Formations CSE</a></li><li><a href="assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="billetterie-cse.html">Billetterie CSE</a></li><li><a href="carte-cezam-1.html">Carte Cezam</a></li><li><a href="animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="index.html"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url(mediacenter/uploads/xxl/bandeau-desk3.png)"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="login.html#body-top"><img src="img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="nous-trouver.html#body-top"><img src="img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="contact.html#body-top"><img src="img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = 'commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = 'commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="index.html">Accueil</a></li><li class="active">Nous trouver</li></ul></div><div class="container"><header><h1>Nous trouver</h1></header></div><div class="container"><h3><span style="color: #ff9900;">Découvrez tous nos relais Cezam en France :</span></h3><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCko27H6oMYRj0HBE9MiP80dTNamlPIt7E"></script><script>
+    function initialize() {
+
+
+        var centerCoordinates = new google.maps.LatLng(46.856614,2.3522219);
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            zoom: 5,
+            center: centerCoordinates,
+            disableDefaultUI: true,
+            zoomControl: true,
+            styles:[
+                {elementType: 'geometry', stylers: [{color: '#eeeeee'}]},
+                {elementType: 'labels.text.fill', stylers: [{color: '#9ca5b3'}]},
+                {
+                    featureType: 'administrative.locality',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#3C3C3B'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [{color: '#FFFFFF'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#9ca5b3'}]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry',
+                    stylers: [{color: '#dddddd'}]
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'geometry',
+                    stylers: [{color: '#999999'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry',
+                    stylers: [{color: '#ffffff'}]
+                },
+                {
+                    featureType: 'poi',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    "featureType": "transit.station",
+                    "elementType": "labels.icon",
+                    "stylers": [{"visibility": "off"}]
+                }
+            ]
+        });
+
+        var infoWindows = [];
+
+        function closeAllInfoWindows() {
+            for (var i=0;i<infoWindows.length;i++) {
+                infoWindows[i].close();
+            }
+        }
+
+        
+            
+                var marker1 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.87565994262695, 2.349076271057129),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Ile-de-France"
+                });
+                var infoWindow1 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Ile-de-France</b><br /><br />'+
+                        '<p>54 rue de Paradis<br />Bâtiment A - 2<sup>ème</sup> étage<br />75010 Paris</p>'+
+'<p>Métro : Poissonnière (ligne 7)</p>'+
+'<p>Tél. : 01 42 46 13 00<br />idf@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow1);
+                marker1.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow1.open(map, marker1);
+                });
+
+                    
+            
+                var marker2 = new google.maps.Marker({
+                    position: new google.maps.LatLng(50.62604904174805, 3.0424044132232666),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Hauts-de-France"
+                });
+                var infoWindow2 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Hauts-de-France</b><br /><br />'+
+                        '<p>145 rue des Stations<br />59000 Lille</p>'+
+'<p>Tél. : 03 20 30 88 31<br />contact-hdf@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow2);
+                marker2.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow2.open(map, marker2);
+                });
+
+                    
+            
+                var marker3 = new google.maps.Marker({
+                    position: new google.maps.LatLng(49.198936462402344, -0.3568858802318573),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Normandie"
+                });
+                var infoWindow3 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Normandie</b><br /><br />'+
+                        '<p>30 avenue Nicolas Copernic<br />14000 Caen</p>'+
+'<p>Tél. : 02 31 95 96 64<br />contact-normandie@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow3);
+                marker3.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow3.open(map, marker3);
+                });
+
+                    
+            
+                var marker4 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.3853916, -4.4789634),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam en Bretagne"
+                });
+                var infoWindow4 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam en Bretagne</b><br /><br />'+
+                        '<p>Antenne de Brest<br />Immeuble Madelorn<br />220 Rue Ernest Hemingway<br />29200 Brest</p>'+
+'<p>Tél. : 02 57 68 04 09<br />billetterie-brest@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow4);
+                marker4.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow4.open(map, marker4);
+                });
+
+                    
+            
+                var marker5 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.666358947753906, -3.0093741416931152),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam en Bretagne"
+                });
+                var infoWindow5 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam en Bretagne</b><br /><br />'+
+                        '<p>Antenne d\'Auray<br />19 rue du Danemark<br />56400 Auray</p>'+
+'<p>Tél. : 02 97 47 49 09 / 02 97 88 33 80<br />billetterie-brest@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow5);
+                marker5.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow5.open(map, marker5);
+                });
+
+                    
+            
+                var marker6 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.49397277832031, -2.746800422668457),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam en Bretagne"
+                });
+                var infoWindow6 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam en Bretagne</b><br /><br />'+
+                        '<p>Antenne de Saint-Brieuc<br />1 rue du Vau Louis<br />22000 Saint-Brieuc</p>'+
+'<p>Tél. : 02 96 75 61 96<br />billetterie-brest@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow6);
+                marker6.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow6.open(map, marker6);
+                });
+
+                    
+            
+                var marker7 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.48390579223633, -0.5417242646217346),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Pays de la Loire"
+                });
+                var infoWindow7 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Pays de la Loire</b><br /><br />'+
+                        '<p>Antenne d\'Angers<br />12 avenue Jean Joxé - Bâtiment Atrium<br />49109 Angers Cedex 02</p>'+
+'<p>Tél. : 02 41 88 25 87<br /><a href="mailto:angers@cezampdl.fr">angers@cezampdl.fr</a></p>'
+                });
+                infoWindows.push(infoWindow7);
+                marker7.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow7.open(map, marker7);
+                });
+
+                    
+            
+                var marker8 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.07511901855469, -0.8610033392906189),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Pays de la Loire"
+                });
+                var infoWindow8 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Pays de la Loire</b><br /><br />'+
+                        '<p>Antenne de Cholet<br />1 rue de la Sarthe<br />49300 Cholet</p>'+
+'<p>Tél. : 02 41 58 84 08<br /><a href="mailto:cholet@cezampdl.fr">cholet@cezampdl.fr</a></p>'
+                });
+                infoWindows.push(infoWindow8);
+                marker8.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow8.open(map, marker8);
+                });
+
+                    
+            
+                var marker9 = new google.maps.Marker({
+                    position: new google.maps.LatLng(46.667964024792894, -1.3959184644048763),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Pays de la Loire"
+                });
+                var infoWindow9 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Pays de la Loire</b><br /><br />'+
+                        '<p>Antenne de La Roche-sur-Yon<br />9 rue Alphonse Boudard<br />85000 La Roche-sur-Yon</p>'+
+'<p>Tél. : 02 51 62 60 55<br /><a href="mailto:larochesuryon@cezampdl.fr">larochesuryon@cezampdl.fr</a></p>'
+                });
+                infoWindows.push(infoWindow9);
+                marker9.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow9.open(map, marker9);
+                });
+
+                    
+            
+                var marker10 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.0815315246582, -0.7479193210601807),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Pays de la Loire"
+                });
+                var infoWindow10 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Pays de la Loire</b><br /><br />'+
+                        '<p>Antenne de Laval<br />66 boulevard Denis Papin - Z.I des Touches<br />53000 Laval</p>'+
+'<p>Tél. : 02 43 91 50 32<br /><a href="mailto:laval@cezampdl.fr">laval@cezampdl.fr</a></p>'
+                });
+                infoWindows.push(infoWindow10);
+                marker10.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow10.open(map, marker10);
+                });
+
+                    
+            
+                var marker11 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.00347900390625, 0.2093483954668045),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Pays de la Loire"
+                });
+                var infoWindow11 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Pays de la Loire</b><br /><br />'+
+                        '<p>Antenne du Mans<br />23 rue Notre-Dame<br />72000 Le Mans</p>'+
+'<p>Tél. : 02 43 16 04 05<br /><a href="mailto:lemans@cezampdl.fr">lemans@cezampdl.fr</a></p>'
+                });
+                infoWindows.push(infoWindow11);
+                marker11.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow11.open(map, marker11);
+                });
+
+                    
+            
+                var marker12 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.205509185791016, -1.6021031141281128),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Pays de la Loire"
+                });
+                var infoWindow12 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Pays de la Loire</b><br /><br />'+
+                        '<p>Antenne de Nantes<br />15D boulevard Jean Moulin CS30511<br />44105 Nantes Cedex 4</p>'+
+'<p>Tél. : 02 40 73 45 20<br /><a href="mailto:nantes@cezampdl.fr">nantes@cezampdl.fr</a></p>'
+                });
+                infoWindows.push(infoWindow12);
+                marker12.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow12.open(map, marker12);
+                });
+
+                    
+            
+                var marker13 = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.651668548583984, 0.15882129967212677),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Nouvelle-Aquitaine"
+                });
+                var infoWindow13 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Nouvelle-Aquitaine</b><br /><br />'+
+                        '<p>Antenne d\'Angoulême<br />14 rue Marcel Paul<br />16000 Angoulême</p>'+
+'<p>Tél. : 05 45 90 66 39<br />billetterie16@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow13);
+                marker13.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow13.open(map, marker13);
+                });
+
+                    
+            
+                var marker14 = new google.maps.Marker({
+                    position: new google.maps.LatLng(46.17558670043945, -1.1997778415679932),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Nouvelle-Aquitaine"
+                });
+                var infoWindow14 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Nouvelle-Aquitaine</b><br /><br />'+
+                        '<p>Antenne La Rochelle<br />Centre Altaïr<br />Rue des Vosges<br />17000 La Rochelle</p>'+
+'<p>Tél. : 05 49 79 35 28<br />billetterie-na@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow14);
+                marker14.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow14.open(map, marker14);
+                });
+
+                    
+            
+                var marker15 = new google.maps.Marker({
+                    position: new google.maps.LatLng(46.33834457397461, -0.3958801329135895),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Nouvelle-Aquitaine"
+                });
+                var infoWindow15 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Nouvelle-Aquitaine</b><br /><br />'+
+                        '<p>Antenne de Chauray<br />Parc les Colonnes Vertes<br />Boulevard François Arago <br />79180 Chauray</p>'+
+'<p>Tél. : 05 49 79 35 28<br />billetterie79@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow15);
+                marker15.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow15.open(map, marker15);
+                });
+
+                    
+            
+                var marker16 = new google.maps.Marker({
+                    position: new google.maps.LatLng(46.609802463186426, 0.33921146425404125),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Nouvelle-Aquitaine"
+                });
+                var infoWindow16 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Nouvelle-Aquitaine</b><br /><br />'+
+                        '<p>Antenne de Poitiers<br />6 bis rue Albin Haller<br />86000 Poitiers</p>'+
+'<p>Tél. : 05 49 37 29 33<br />billetterie86@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow16);
+                marker16.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow16.open(map, marker16);
+                });
+
+                    
+            
+                var marker17 = new google.maps.Marker({
+                    position: new google.maps.LatLng(44.01313018798828, 1.3506685495376587),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Occitanie"
+                });
+                var infoWindow17 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Occitanie</b><br /><br />'+
+                        '<p>6 Place du 22 septembre<br />82000 Montauban</p>'+
+'<p>Tél : 05 63 66 14 88<br />accueil-occitanie@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow17);
+                marker17.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow17.open(map, marker17);
+                });
+
+                    
+            
+                var marker18 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.644412994384766, 6.853496074676514),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Bourgogne-Franche-Comté"
+                });
+                var infoWindow18 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Bourgogne-Franche-Comté</b><br /><br />'+
+                        '<p>Antenne de Belfort<br />4A rue Saint-Antoine - BP3030<br />90020 Belfort Cedex</p>'+
+'<p>Tél. : 03 84 36 63 63<br />billetterie-bfc@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow18);
+                marker18.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow18.open(map, marker18);
+                });
+
+                    
+            
+                var marker19 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.24353194286012, 6.030075197996361),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Bourgogne-Franche-Comté"
+                });
+                var infoWindow19 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Bourgogne-Franche-Comté</b><br /><br />'+
+                        '<p>Antenne de Besançon<br />11 Avenue Carnot<br />25000 Besançon</p>'
+                });
+                infoWindows.push(infoWindow19);
+                marker19.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow19.open(map, marker19);
+                });
+
+                    
+            
+                var marker20 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.745628356933594, 7.337255954742432),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Grand Est"
+                });
+                var infoWindow20 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Grand Est</b><br /><br />'+
+                        '<p>Antenne de Mulhouse<br />7 rue Alfred Engel - BP 21124<br />68052 Mulhouse Cedex 1</p>'+
+'<p>Tél. : 03 89 56 55 54<br />contact.mulhouse@cezam-grandest.fr</p>'
+                });
+                infoWindows.push(infoWindow20);
+                marker20.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow20.open(map, marker20);
+                });
+
+                    
+            
+                var marker21 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.614105224609375, 7.71295166015625),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Grand Est"
+                });
+                var infoWindow21 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Grand Est</b><br /><br />'+
+                        '<p>Antenne de Strasbourg<br /><span style="text-decoration: underline;"></span>1 rue de la Haye - ZAC Espace Européen de l’Entreprise <br />Bât. les Ailes de l’Europe - 1er étage - 67300 SCHILTIGHEIM</p>'+
+'<p>Tél. : 03 88 26 19 19<br />contact.strasbourg@cezam-grandest.fr</p>'
+                });
+                infoWindows.push(infoWindow21);
+                marker21.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow21.open(map, marker21);
+                });
+
+                    
+            
+                var marker22 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.70338821411133, 6.173799514770508),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Grand Est"
+                });
+                var infoWindow22 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Grand Est</b><br /><br />'+
+                        '<p>Antenne de Nancy<br />134 rue du Faubourg des Trois Maisons<br />54000 Nancy</p>'+
+'<p>Tél. : 09 83 87 91 86<br />contact.nancy@cezam-grandest.fr</p>'
+                });
+                infoWindows.push(infoWindow22);
+                marker22.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow22.open(map, marker22);
+                });
+
+                    
+            
+                var marker23 = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.795955657958984, 3.120392084121704),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Auvergne - Rhône-Alpes"
+                });
+                var infoWindow23 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Auvergne - Rhône-Alpes</b><br /><br />'+
+                        '<p>Antenne de Clermont-Ferrand<br />8 rue Jacques Magnier <br />63100 Clermont-Ferrand</p>'+
+'<p>Tél. : 04 73 37 36 96<br />clermont@cezam-aura.fr</p>'
+                });
+                infoWindows.push(infoWindow23);
+                marker23.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow23.open(map, marker23);
+                });
+
+                    
+            
+                var marker24 = new google.maps.Marker({
+                    position: new google.maps.LatLng(44.90170669555664, 2.4305248260498047),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Auvergne - Rhône-Alpes"
+                });
+                var infoWindow24 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Auvergne - Rhône-Alpes</b><br /><br />'+
+                        '<p>Antenne d\'Aurillac<br />Bâtiment Catapulte<br />14 avenue du Garric - Village Entreprise<br />15000 Aurillac</p>'+
+'<p>Tél. : 04 73 37 83 32<br />c.petey@cezam-aura.fr</p>'
+                });
+                infoWindows.push(infoWindow24);
+                marker24.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow24.open(map, marker24);
+                });
+
+                    
+            
+                var marker25 = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.2544862, 4.6800821),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Auvergne - Rhône-Alpes"
+                });
+                var infoWindow25 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Auvergne - Rhône-Alpes</b><br /><br />'+
+                        '<p>Antenne d\'Annonay<br />Pôle entrepreneurial de Vidalon<br />698 rue de Vidalon<br />07430 Davézieux</p>'+
+'<p>Tél. : 04 75 32 03 06<br />annonay@cezam-aura.fr</p>'
+                });
+                infoWindows.push(infoWindow25);
+                marker25.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow25.open(map, marker25);
+                });
+
+                    
+            
+                var marker26 = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.75791931152344, 4.899862289428711),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Auvergne - Rhône-Alpes"
+                });
+                var infoWindow26 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Auvergne - Rhône-Alpes</b><br /><br />'+
+                        '<p>Antenne de Lyon<br />Pôle Pixel - Bât Minoterie 3ème étage<br />26 rue Emile Decorps<br />69100 Villeurbanne</p>'+
+'<p>Tél. : 04 26 68 74 08<br />lyon@cezam-aura.fr</p>'
+                });
+                infoWindows.push(infoWindow26);
+                marker26.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow26.open(map, marker26);
+                });
+
+                    
+            
+                var marker27 = new google.maps.Marker({
+                    position: new google.maps.LatLng(46.21128463745117, 5.233182907104492),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Auvergne - Rhône-Alpes"
+                });
+                var infoWindow27 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Auvergne - Rhône-Alpes</b><br /><br />'+
+                        '<p>Antenne de Bourg-en-Bresse<br />100 place Louis Blériot<br />01000 Bourg-en-Bresse</p>'+
+'<p>Tél. : 04 74 22 53 73<br /><a href="mailto:bourgenbresse@cezam-aura.fr">bourgenbresse@cezam-aura.fr</a></p>'+
+'<p><span style="text-decoration: underline;">Adresse postale :<br /></span>Maison de la Culture et de la Citoyenneté<br />4 Allée des Brotteaux – CS 70270<br />01006 Bourg-en-Bresse Cedex</p>'
+                });
+                infoWindows.push(infoWindow27);
+                marker27.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow27.open(map, marker27);
+                });
+
+                    
+            
+                var marker28 = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.1324192, -1.6239778),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Ille-et-Vilaine"
+                });
+                var infoWindow28 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Ille-et-Vilaine</b><br /><br />'+
+                        '<p>2 square du Chêne Germain<br />CS 71768<br />35517 Cesson-Sévigné Cedex</p>'+
+'<p>Tél. : 02 23 30 22 77 <br />billetterie35@cezam.fr</p>'
+                });
+                infoWindows.push(infoWindow28);
+                marker28.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow28.open(map, marker28);
+                });
+
+                    
+            
+                var marker29 = new google.maps.Marker({
+                    position: new google.maps.LatLng(47.9809199, -4.1029989),
+                    map: map,
+                    icon: "/img/cezam/pin.png?version=a60399fe",
+                    title: "Cezam Sud-Finistère"
+                });
+                var infoWindow29 = new google.maps.InfoWindow({
+                    content:
+                        '<b>Cezam Sud-Finistère</b><br /><br />'+
+                        '<p>Centre Delta <br />4 boulevard de Créac\'h Gwen<br />29000 Quimper</p>'+
+'<p>Tél. : 02 98 53 33 60<br />contact.quimper@cezam.fr </p>'
+                });
+                infoWindows.push(infoWindow29);
+                marker29.addListener('click', function() {
+                    closeAllInfoWindows();
+                    infoWindow29.open(map, marker29);
+                });
+
+                    
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+</script><div id="map-canvas" class="gmap" style="height:600px"></div></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="mentions-legales-2.html">Mentions légales</a></li><li><a href="donnees-personnelles-2.html">Données personnelles</a></li><li><a href="faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/nous-trouver by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:40:05 GMT -->
+</html>

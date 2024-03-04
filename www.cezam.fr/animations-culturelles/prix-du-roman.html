@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/animations-culturelles/prix-du-roman by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:42:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Prix du roman</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="../favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="../build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="../build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="../index.html" class="menu-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="../choix-antenne.html" class="mobile-only"><img src="../img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="../cezam.html">Accueil</a></li><li><a href="../qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="../formations-cse.html">Formations CSE</a></li><li><a href="../assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="../billetterie-cse.html">Billetterie CSE</a></li><li><a href="../carte-cezam-1.html">Carte Cezam</a></li><li><a href="../animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="../sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="../faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="../faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="../index.html"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url(../mediacenter/uploads/xxl/head-site-prix-roman-2024-1348-x-400.jpg)"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="../login.html#body-top"><img src="../img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="../nous-trouver.html#body-top"><img src="../img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="../contact.html#body-top"><img src="../img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = '../commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="../commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = '../commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="../index.html">Accueil</a></li><li><a href="../animations-culturelles.html">Animations culturelles</a></li><li class="active">Prix du Roman</li></ul></div><div class="mainBody-section"><div class="container"><header><h1>Prix du Roman</h1></header></div><section class="edito"><h3><span style="color: #008080;"><strong>Renforcez le lien entre la culture et le monde du travail en amenant simplement la lecture dans votre entreprise.</strong></span><br /><br /></h3><h4><span style="color: #33cccc;"><strong>RETOURS DES VOTES :</strong></span></h4><p><strong><img src="../mediacenter/uploads/s/puce.png" alt="Puce" width="7" height="7" />  Tableau de votes Excel</strong> :</p><p style="padding-left: 30px;"><img src="../mediacenter/uploads/s/picto-telecharger2.png" alt="Picto telecharger2" width="27" height="33" />  <span style="color: #000000;"> Les modalités de vote seront indiquées sur le bulletin à partir de février 2024</span></p><p><strong><img src="../mediacenter/uploads/s/puce.png" alt="Puce" width="7" height="7" />  Votes en ligne</strong> : <strong><br /></strong></p><p style="padding-left: 30px;"><img src="../mediacenter/uploads/s/picto-vote.png" alt="PICTO VOTE" width="28" height="28" />   Les modalités de vote seront indiquées sur le bulletin à partir de février 2024</p><h4> </h4><h4><span style="color: #33cccc;"><strong>EN SAVOIR PLUS :</strong> </span></h4><p><img src="../mediacenter/uploads/s/loupe11.png" alt="Loupe1" width="32" height="33" />  <a href="prix-du-roman/prix-du-roman-cezam-info.html"><span style="color: #333333;">Qu’est-ce-que le Prix du roman Cezam ? Comment le mettre en place dans son entreprise</span> <span style="color: #333333;">?</span></a></p><p><img src="../mediacenter/uploads/s/loupe11.png" alt="Loupe1" width="32" height="33" />  <a href="prix-du-roman/laureats-prix-du-roman.html"><span style="color: #333333;">Découvrez les lauréats de 2013 à aujourd’hui</span></a></p><p><span style="color: #333333;"><a href="prix-du-roman/temoignages-prix-du-roman-cezam.html"><span style="color: #333333;"><img src="../mediacenter/uploads/s/loupe11.png" alt="Loupe1" width="33" height="34" />  Découvrez les témoignages de</span> <span style="color: #333333;">lecteurs, </span><span style="color: #333333;">éditeurs et auteurs</span></a></span></p><p><img src="../mediacenter/uploads/s/loupe11.png" alt="Loupe1" width="35" height="36" />  <span style="color: #000000;"><a href="prix-du-roman/rencontres-auteurs-prix-du-roman-replay.html"><span style="color: #000000;"><span style="color: #333333;">Regardez les replays des Rencontres auteurs</span></span></a></span></p><p><img src="../mediacenter/uploads/s/facebook-picto.png" alt="Facebook picto" width="29" height="22" />   <span style="color: #333333;"><a href="https://www.facebook.com/Prix-du-Roman-Cezam-106611390778295/" target="_blank" rel="noopener"><span style="color: #333333;">Suivez l’actualité du Prix du</span> <span style="color: #333333;">roman</span></a></span> </p><p> </p></section><div class="clearfix"></div><div class="selection vignettes"><h2 class="home-subtitle">Découvrez la sélection 2024</h2><article class="block-item"><a href="prix-du-roman/le-profil-de-galatee.html" title="Le profil de Galatée"><img src="../mediacenter/uploads/sc/le-profil-de-galatee.jpg" alt="Le profil de Galatée" style="width:auto;" /><div class="block-title">
+        Le profil de Galatée
+    </div></a></article><article class="block-item"><a href="prix-du-roman/l-allegement-des-vernis.html" title="L&#039;allègement des vernis"><img src="../mediacenter/uploads/sc/l%27allegement-des-vernis.jpg" alt="L&#039;allègement des vernis" style="width:auto;" /><div class="block-title">
+        L&#039;allègement des vernis
+    </div></a></article><article class="block-item"><a href="prix-du-roman/demain-les-ombres.html" title="Demain les ombres"><img src="../mediacenter/uploads/sc/demain-les-ombres.jpg" alt="Demain les ombres" style="width:auto;" /><div class="block-title">
+        Demain les ombres
+    </div></a></article><article class="block-item"><a href="prix-du-roman/flagrant-deni.html" title="Flagrant déni"><img src="../mediacenter/uploads/sc/flagrant-deni.jpg" alt="Flagrant déni" style="width:auto;" /><div class="block-title">
+        Flagrant déni
+    </div></a></article><article class="block-item"><a href="prix-du-roman/les-cles-du-couloir.html" title="Les clés du couloir"><img src="../mediacenter/uploads/sc/les-cles-du-couloir.jpg" alt="Les clés du couloir" style="width:auto;" /><div class="block-title">
+        Les clés du couloir
+    </div></a></article><article class="block-item"><a href="prix-du-roman/les-contemplees.html" title="Les Contemplées"><img src="../mediacenter/uploads/sc/les-contemplees.jpg" alt="Les Contemplées" style="width:auto;" /><div class="block-title">
+        Les Contemplées
+    </div></a></article><article class="block-item"><a href="prix-du-roman/la-femme-paradis.html" title="La femme Paradis"><img src="../mediacenter/uploads/sc/la-femme-paradis.jpg" alt="La femme Paradis" style="width:auto;" /><div class="block-title">
+        La femme Paradis
+    </div></a></article><article class="block-item"><a href="prix-du-roman/comment-va-la-nuit-.html" title="Comment va la nuit ?"><img src="../mediacenter/uploads/sc/comment-va-la-nuit.jpg" alt="Comment va la nuit" style="width:auto;" /><div class="block-title">
+        Comment va la nuit ?
+    </div></a></article><article class="block-item"><a href="prix-du-roman/les-silences.html" title="Les silences"><img src="../mediacenter/uploads/sc/les-silences1.jpg" alt="Les silences" style="width:auto;" /><div class="block-title">
+        Les silences
+    </div></a></article><article class="block-item"><a href="prix-du-roman/l-enfant-riviere.html" title="L&#039;enfant rivière"><img src="../mediacenter/uploads/sc/l%27enfant-riviere.jpg" alt="L&#039;enfant rivière" style="width:auto;" /><div class="block-title">
+        L&#039;enfant rivière
+    </div></a></article></div><section class="news"><div class="content-align"><div class="content-align-left"></div><div class="content-align-right"><div class="advert advert-small"></div></div></div></section><section class="advert"></section><section class="events mobile-no-border"></section></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="../mentions-legales-2.html">Mentions légales</a></li><li><a href="../donnees-personnelles-2.html">Données personnelles</a></li><li><a href="../faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="../faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="../js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/animations-culturelles/prix-du-roman by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:42:36 GMT -->
+</html>

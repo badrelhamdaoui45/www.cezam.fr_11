@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/sorties-voyages-sejours by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Sorties, voyages groupés ou séjours à la carte à prix réduit</title><meta name="description" content="Cezam propose une large sélection d’offres pour les vacances, accessibles à tous."><link rel="icon" type="image/x-icon" href="favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="index.html" class="menu-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="choix-antenne.html" class="mobile-only"><img src="img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="cezam.html">Accueil</a></li><li><a href="qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="formations-cse.html">Formations CSE</a></li><li><a href="assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="billetterie-cse.html">Billetterie CSE</a></li><li><a href="carte-cezam-1.html">Carte Cezam</a></li><li><a href="animations-culturelles-cse.html">Animations culturelles</a></li><li class="active"><a href="sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="index.html"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url(mediacenter/uploads/xxl/bandeau-desk3.png)"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="login.html#body-top"><img src="img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="nous-trouver.html#body-top"><img src="img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="contact.html#body-top"><img src="img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = 'commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = 'commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="index.html">Accueil</a></li><li class="active">Sorties, voyages, séjours pour les CSE</li></ul></div><div class="container"><header><h1>Sorties, voyages, séjours pour les CSE</h1></header></div><div class="container"><p>Une offre variée de sorties et voyages clés en main, sur mesure ou mutualisés avec d'autres collectifs, mais aussi des prix réduits toute l'année pour les vacances et activités des salariés.</p><h2><span style="color: #00ccff;">Vos projets de sorties ou séjours groupés</span></h2><h3><strong><img src="mediacenter/uploads/m/decouverte_1.png" alt="Decouverte CSE Cezam" width="260" height="186" class="media-pullLeft" /></strong></h3><p>De nombreuses associations Inter-CSE Cezam sont <strong>immatriculées au registre des opérateurs de voyages</strong>, offrant ainsi la garantie d'un <strong>tourisme responsable</strong>.</p><p>Propositions <strong>sur mesure</strong>, <strong>clé en main</strong> ou <strong>mutualisées</strong> avec d'autres collectifs : le réseau Cezam vous accompagne dans votre projet.</p><p>Nos objectifs : émancipation, échanges et découverte.<br /><br /></p><p> </p><h2><span style="color: #00ccff; clear: both;">Composer ses vacances en toute liberté</span></h2><h3><span style="color: #ff9900; clear: both;">Locations Vacances Cezam</span></h3><p style="clear: both;">Le Réseau Cezam, acteur de l’économie sociale et solidaire (ESS), défend l’accès aux vacances pour tous grâce à des tarifs attractifs et accessibles. Depuis 6 ans, le Réseau Cezam propose une offre variée de locations de vacances, en France et à l’étranger, à prix fixes, toute l’année.</p><p><strong>En 2022, c’est plus de 580 destinations pour répondre à toutes les envies de vacances !</strong></p><ul><li>Campings : + de 400 destinations en mobile-home ou emplacement, à partir de 165 € la semaine</li><li>Résidences : + de 90 destinations en France à partir de 215 € la semaine</li><li>Demi-pension : 15 destinations en France à partir de 262 € la semaine</li><li>Vacances au ski : 31 destinations dans les Alpes, les Pyrénées et le Massif central à partir de 220 € la semaine</li><li>Aparthotel : + de 100 destinations en France et en Europe jusqu’à - 25 %</li></ul><p><img src="mediacenter/uploads/l/catalogue-vacances-tourisme-cse2.png" alt="Catalogue vacances tourisme cse" width="488" height="160" /></p><p><strong>Trouver son bonheur en quelques clics !</strong><br /> L’offre Locations Vacances Cezam est disponible en ligne sur cezam.fr.<br /> Les salariés peuvent effectuer leur demande de réservation en toute simplicité.<br />Diverses possibilités de paiement sont proposées : carte bancaire, chèques bancaires (jusqu'à 3 fois sans frais), chèques ANCV.<br /><br /></p><h3><span style="color: #ff9900;"><img src="mediacenter/uploads/m/amis_1.png" alt="Amis CSE billetterie loisirs vacances" width="280" height="201" class="media-pullLeft" />Des réductions toute l’année</span></h3><p>Grâce à la carte Cezam, les salariés peuvent aussi bénéficier en toute autonomie de nombreuses remises, accessibles avec des <strong>codes de réduction</strong>.</p><p>Le Réseau Cezam travaille en étroite collaboration avec de <strong>nombreux partenaires vacances et acteurs du tourisme social</strong> : villages vacances, résidences locatives, campings, séjours jeunes et linguistiques, hôtels et appart’ hôtels, gîtes, hébergements insolites, voyages organisés et circuits...</p><p>Toutes ces offres sont accessibles sur cezam.fr et sur l'application mobile.</p><p style="text-align: center;"> </p><p style="text-align: center;"><img src="mediacenter/uploads/s/icone-point-interrogation.png" alt="Icone point interrogation" width="45" height="45" /></p><p style="text-align: center;"><a href="contact.html">Contactez-nous pour plus de renseignements !</a></p></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="mentions-legales-2.html">Mentions légales</a></li><li><a href="donnees-personnelles-2.html">Données personnelles</a></li><li><a href="faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/sorties-voyages-sejours by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:59 GMT -->
+</html>

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/qui-sommes-nous-1 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Cezam | 1er réseau de coopération entre élus de cse</title><meta name="description" content="Depuis 40 ans, les associations du Réseau Cezam développent un concept original de coopération et de mutualisation entre CSE."><link rel="icon" type="image/x-icon" href="favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="index.html" class="menu-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="choix-antenne.html" class="mobile-only"><img src="img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="cezam.html">Accueil</a></li><li class="active"><a href="qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="formations-cse.html">Formations CSE</a></li><li><a href="assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="billetterie-cse.html">Billetterie CSE</a></li><li><a href="carte-cezam-1.html">Carte Cezam</a></li><li><a href="animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="index.html"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url(mediacenter/uploads/xxl/bandeau-desk3.png)"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="login.html#body-top"><img src="img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="nous-trouver.html#body-top"><img src="img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="contact.html#body-top"><img src="img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = 'commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = 'commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="index.html">Accueil</a></li><li class="active">Qui sommes-nous ?</li></ul></div><div class="container"><header><h1>Qui sommes-nous ?</h1></header></div><div class="container"><p>Depuis 40 ans, à l'initiative d'élus de comités d'entreprise, les associations du Réseau Cezam développent un concept original de coopération et de mutualisation entre CSE et collectifs adhérents. </p><h3><span style="color: #00ccff;">UN PEU D'HISTOIRE</span></h3><p><strong><span style="color: #ff9900;">→ Années 1960 : Les premières mutualisations</span></strong><br /> 1967 Création de l’INVAC (aujourd’hui UNCOVAC) : mutualisation et solidarité autour des vacances<br /> 1968 Création d’Alicea par la Fédération CFDT de l’Agro-alimentaire.</p><p><span style="color: #ff9900;"><strong>→ Années 80 : Organisation et première activité nationale</strong></span><br /> Création des premières Inter-CE interprofessionnelles qui se structurent progressivement en un Réseau grâce à des activités et des valeurs communes.<br /> En 1988, création de la carte Cezam, premier outil national du Réseau.</p><p><span style="color: #ff9900;"><strong>→ Années 90 : La notion de réseau prend tout son sens et celui-ci commence à se structurer</strong></span><br /> Le Réseau se développe autour d’un objectif : mettre en commun des idées et des moyens, afin de permettre à tous de bénéficier des activités développées.<br /> Leurs mots d’ordre : ouverture, mutualisation, coopération, solidarité, émancipation…</p><p><span style="color: #ff9900;"><strong>→ Années 2000 : La mutualisation dans le Réseau Cezam se met en marche</strong></span></p><p><strong>2002</strong><br /> L’UES Cezam, après que le Réseau se soit détaché de la CFDT, voit ses missions évoluer autour de 3 pôles : le Carte Cezam, la communication et le développement de technologies informatiques.</p><p><strong>2006</strong><br /> Les Inter-CE décident de créer une Fédération pour favoriser l’animation, la coordination, la pérennisation et le développement du Réseau.<br /> Chaque Inter-CE est alors représentée au Conseil d’Administration : 1 association = 1 voix.</p><p><span style="color: #ff9900;"><strong>→ Années 2010 : De nouveaux outils et nouvelles actions au bénéficie des adhérents Cezam</strong></span></p><p><strong>2010</strong><br /> En complément des sites internet des Inter-CE, l’UES Cezam crée www.carte-cezam.fr, avec pour la première fois une visibilité nationale de l’offre et des activités Cezam</p><p><strong>2016</strong><br /> Création de l’Observatoire Cezam "L’action des élus sous l’œil des experts".<br /> Journée d’études, de réflexion, d’apports théoriques et pratiques pour les CSE adhérents Cezam.</p><p><strong>2019</strong></p><ul><li>Création du site  www.cezam.fr qui permet de fusionner tous le sites Internet du Réseau et ainsi valoriser en un seul endroit toutes les offres et activités.</li><li>Création de l’Appli "Ma carte Cezam" permettant de dématérialiser la carte Cezam et de retrouver toute l’offre sur un smartphone.<br /> </li></ul><h3><span style="color: #00ccff;">CE QUI NOUS DÉFINIT</span></h3><p><strong>→ Une charte commune affirmant les valeurs du Réseau</strong><br /> Elle permet d’inscrire l’Homme et le bien-vivre ensemble dans les actions des associations, devenant ainsi des acteurs de l’Economie Sociale et Solidaire.</p><p><strong>→ Des objectifs communs</strong></p><ul><li>Aider les élus dans leurs actions afin de favoriser le développement d’activités sociales, culturelles, sportives et de loisirs qui permettent à chacun de découvrir de nouveaux horizons, de s’ouvrir à de nouvelles perspectives.</li><li>Accompagner, former et soutenir les élus pour qu’ils puissent accomplir au mieux leur mandat.</li></ul><p><strong>→ Une volonté commune</strong></p><ul><li>Proposer une offre aux collectifs adhérents la plus harmonieuse et la plus complète possible sur le territoire français.</li><li>Constituer un réseau alternatif au secteur marchand.</li><li>Aider le CSE (ou organisme similaire) à accomplir son rôle dans le cadre d’un projet global (attributions d’avis et de contrôle et activités sociales et culturelles).<br /> </li></ul><h3><span style="color: #00ccff;">NOS VALEURS</span></h3><p><img src="mediacenter/uploads/m/cooperation.png" alt="Cooperation CSE Cezam" width="180" height="57" /></p><p><strong>Des adhérents acteurs !</strong></p><ul><li>L’accès à des activités et services de qualité pour tous les adhérents, quels que soient leur taille et leur budget</li><li>Des associations Cezam locales partageant leurs idées au profit du réseau national</li></ul><p><img src="mediacenter/uploads/m/citoyennete.png" alt="Citoyennete CSE Cezam" width="180" height="57" /></p><p><strong>Repenser un CSE plus citoyen et solidaire</strong></p><ul><li>Une démarche démocratique et solidaire qui place l’homme et non le capital au cœur du projet</li><li>Des associations impliquées dans la vie et l’économie locale</li></ul><p><img src="mediacenter/uploads/m/proximite.png" alt="Proximité CSE Cezam" width="180" height="57" /></p><p><strong>Au carrefour des initiatives locales !</strong></p><ul><li>Présence dans plus de 30 villes et 10 régions</li><li>Des rencontres, des échanges de pratiques, des projets locaux…</li></ul><p><img src="mediacenter/uploads/m/expertise.png" alt="Expertise CSE Cezam réseau d'experts" width="180" height="57" /></p><p><strong>Une présence sur le terrain</strong></p><ul><li>40 ans d’expérience</li><li>Des associations administrées par 500 élus bénévoles</li><li>Des professionnels de terrain pour animer et développer les projets</li></ul></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="mentions-legales-2.html">Mentions légales</a></li><li><a href="donnees-personnelles-2.html">Données personnelles</a></li><li><a href="faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/qui-sommes-nous-1 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:49 GMT -->
+</html>

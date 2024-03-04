@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/la-carte-cezam by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    La carte cezam</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="index.html" class="menu-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="choix-antenne.html" class="mobile-only"><img src="img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="cezam.html">Accueil</a></li><li><a href="qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="formations-cse.html">Formations CSE</a></li><li><a href="assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="billetterie-cse.html">Billetterie CSE</a></li><li><a href="carte-cezam-1.html">Carte Cezam</a></li><li><a href="animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="index.html"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url('img/cezam/default_header1820.jpg?version=a60399fe');"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="login.html#body-top"><img src="img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="nous-trouver.html#body-top"><img src="img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="contact.html#body-top"><img src="img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = 'commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = 'commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="index.html">Accueil</a></li><li class="active">La carte Cezam</li></ul></div><div class="mainBody-section"><div class="container"><header><h1>La carte Cezam</h1></header></div><section class="edito"><h2><span style="color: #993366;">Donnez du pouvoir d'accès aux salariés !</span></h2><p><img src="mediacenter/uploads/xl/loisirs_1.png" alt="Loisirs Culture Vacances CSE Cezam" class="media-pullRight" />La Carte Cezam, c'est toute la force du Réseau des associations Cezam, de leurs partenaires et des CSE adhérents, implantés au cœur des régions.</p><p><span style="text-decoration: underline;">En quelques mots :</span></p><ul><li>L'alliée des <strong>sorties, loisirs et vacances</strong> partout en France !</li><li>Une carte nominative qui facilite l'accès aux loisirs, aux sorties culturelles et aux vacances</li><li>Un accès à des loisirs spontanés et en toute liberté tout au long de l'année</li><li><strong>Des tarifs réduits</strong> directement sur présentation de la carte Cezam ou via <strong>l’achat de billetterie</strong> dans nos relais Cezam, en ligne ou via l’application mobile Ma carte Cezam.</li><li>L'accès à des <strong>événements inédits</strong> Cezam : animations culturelles, sorties, voyages.</li></ul><p> </p><h3><span style="color: #ff9900;">Une facilité d'utilisation</span></h3><p>Pour bénéficier de l'ensemble des avantages de la carte, le détenteur doit créer son compte en ligne ou sur l'appli mobile Ma Carte Cezam. Plusieurs modes d'accès aux réductions sont possibles, selon les structures partenaires :</p><p><strong><img src="mediacenter/uploads/xl/detente_1.png" alt="Detente CSE Cezam" class="media-pullLeft" />→ Pour une utilisation en toute spontanéité : liberté, immédiateté, zéro contrainte</strong></p><p>• Présentation de la carte Cezam chez le partenaire<br />• Réservation directement auprès du partenaire avec un code</p><p><strong>→ Pour une utilisation en toute sérénité : peu d'attente en caisse</strong><br />Achat de billets auprès d'un relais Cezam, en ligne ou sur l'appli mobile.</p><p><strong>→ Pour une utilisation en famille :</strong><br />Des cartes conjoint(e)/enfant(s) à disposition pour les membres de votre famille.</p><p> </p><h3><span style="color: #ff9900;">Des offres partout en France et à l'étranger</span></h3><p><strong><img src="mediacenter/uploads/xl/amis_1.png" alt="Amis CSE billetterie loisirs vacances" class="media-pullRight" />Des loisirs au quotidien près de chez soi</strong><br />Cinémas, spectacles, concerts, activité sportives, piscines, parcs de loisirs, lecture, balades…</p><p><strong>Des idées sorties et week-end à deux pas de chez soi</strong><br />Parcs de loisirs et animaliers, musées et sites touristiques, hôtels, chambres d’hôtes…</p><p><strong>Pour des vacances en France ou à l’étranger</strong><br />Mobil-home, résidences, hôtel-clubs, circuits, croisières, voyages solidaires, billets d’avion...</p><h3> <br /><span style="color: #ff9900;">Pourquoi choisir la carte Cezam ?</span></h3><ul><li>Enrichir la politique socioculturelle de votre CSE quels que soient votre taille et votre budget</li><li>Répondre aux problématiques des salariés répartis sur plusieurs secteurs géographiques</li><li>Permettre à la famille de profiter des avantages grâce aux cartes Cezam conjoint(e)/enfant(s)</li><li>Faire bénéficier les salariés d'une assurance loisirs grâce <a href="la-carte-cezam/assurance-maif-carte-cezam.html" target="_blank" rel="noopener">au partenariat exclusif avec la MAIF</a></li></ul><p> </p><p style="text-align: center;"><img src="mediacenter/uploads/s/bulle-dialogue.png" alt="Bulle dialogue" width="50" height="50" style="display: block; margin-left: auto; margin-right: auto;" />Vous souhaitez proposer la carte Cezam à vos bénéficaires ?<br /><a href="contact.html">Contactez-nous !</a></p><p style="text-align: center;"> </p></section><div class="clearfix"></div><section class="news"><div class="blocks blocks-wrap"><article class="block-item"><div class="block-tag" style="background-color:#e34071;">Cezam</div><div class="block-picture"><img src="mediacenter/uploads/sc/actu-appli.jpg" alt="Application mobile Ma Carte Cezam" style="width:auto;" /></div><div class="block-title"><a href="la-carte-cezam/ma-carte-cezam-sur-mon-mobile.html" title="Ma carte Cezam sur mon mobile" class="block-item-read-more">Ma carte Cezam sur mon mobile</a></div></article><article class="block-item"><div class="block-tag" style="background-color:#8b8b8b;">Assistance</div><div class="block-picture"><img src="mediacenter/uploads/sc/maif-logo_330x230.png" alt="Maif logo 330x230" style="width:auto;" /></div><div class="block-title"><a href="la-carte-cezam/assurance-maif-carte-cezam.html" title="Assurance MAIF - Carte Cezam" class="block-item-read-more">Assurance MAIF - Carte Cezam</a></div></article><article class="block-item"><div class="block-tag" style="background-color:#e34071;">Cezam</div><div class="block-picture"><img src="mediacenter/uploads/sc/fille_2019.png" alt="" style="width:auto;" /></div><div class="block-title"><a href="la-carte-cezam/les-newsletters-cezam.html" title="Les newsletters Cezam" class="block-item-read-more">Les newsletters Cezam</a></div></article><article class="block-item"><div class="block-tag" style="background-color:#e34071;">Cezam</div><div class="block-picture"><img src="mediacenter/uploads/sc/com_cezam_23.png" alt="Com Cezam 23" style="width:auto;" /></div><div class="block-title"><a href="la-carte-cezam/ou-utiliser-ma-carte-cezam.html" title="Où utiliser ma carte Cezam" class="block-item-read-more">Où utiliser ma carte Cezam</a></div></article></div></section><section class="advert"></section><section class="events mobile-no-border"></section></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="mentions-legales-2.html">Mentions légales</a></li><li><a href="donnees-personnelles-2.html">Données personnelles</a></li><li><a href="faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/la-carte-cezam by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:38 GMT -->
+</html>

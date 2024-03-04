@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/animations-culturelles-cse by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Animations culturelles et arbres de noël pour les cse</title><meta name="description" content="Organisation d&#039;animations culturelles : Prix du roman, Prix de la BD, sorties thématiques, escapades. Spectacles de fin d&#039;année, arbres de Noël des CSE."><link rel="icon" type="image/x-icon" href="favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="index.html" class="menu-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="choix-antenne.html" class="mobile-only"><img src="img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="cezam.html">Accueil</a></li><li><a href="qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="formations-cse.html">Formations CSE</a></li><li><a href="assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="billetterie-cse.html">Billetterie CSE</a></li><li><a href="carte-cezam-1.html">Carte Cezam</a></li><li class="active"><a href="animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="index.html"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url(mediacenter/uploads/xxl/bandeau-desk3.png)"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="login.html#body-top"><img src="img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="nous-trouver.html#body-top"><img src="img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="contact.html#body-top"><img src="img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = 'commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = 'commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="index.html">Accueil</a></li><li class="active">Animations culturelles pour les CSE</li></ul></div><div class="container"><header><h1>Animations culturelles pour les CSE</h1></header></div><div class="container"><h2><span style="color: #00ccff;">Rencontres, lectures, événements culturels nationaux et locaux</span></h2><p>Les animations culturelles du Réseau Cezam vous permettent, en tant qu’élus de CSE, de <strong>créer du lien</strong> et de proposer des <strong>activités simples et originales</strong> aux salariés de votre entreprise.</p><p><strong>Des animations autour :</strong></p><ul><li>De la lecture avec le <strong>Prix du Roman Cezam</strong>, rendez-vous culturel national, avec une sélection de 10 romans, des rencontres avec les auteurs, des animations...</li><li>De <strong>sorties thématiques</strong>, avec des escapades, des visites et des spectacles en petits groupes pour favoriser la découverte</li><li><strong>D’activités régionales inédites</strong> en fonction de votre relais Cezam et en lien avec la BD, le DVD, le théâtre...<br /> </li></ul><h3><span style="color: #ff9900;">Le Prix du Roman Cezam : un prix des lecteurs original</span></h3><p><img src="mediacenter/uploads/m/lecture_1.png" alt="Lecture CSE Cezam Prix Roman" width="327" height="234" class="media-pullLeft" />Participer au <strong>Prix du Roman Cezam</strong>, c’est partir à la découverte d’une <a href="animations-culturelles/prix-du-roman.html" target="_blank" rel="noopener">sélection éclectique de 10 romans récents</a> et élire son titre préféré ! Chaque année, le prix récompense un auteur ou une auteure pour son roman écrit ou traduit en langue française.</p><p>Le Prix du Roman Cezam s’inscrit aussi dans la vie littéraire locale en s’associant à des médiathèques municipales, des librairies indépendantes et des partenaires locaux.</p><p><strong>Le Prix du roman Cezam c’est :</strong><br />• La volonté de faire entendre de nouvelles voix littéraires à travers un prix du public<br />• La confiance renouvelée de lectrices et lecteurs fidèles<br />• Des rencontres inédites entre des participant(e)s et écrivain(e)s en lice</p><p style="text-align: center;"><img src="mediacenter/uploads/s/bulle-dialogue.png" alt="Bulle dialogue" width="50" height="50" /></p><p style="text-align: center;">Vous souhaitez mettre en place le Prix du Roman au sein de votre entreprise ?<br /><a href="contact.html">Contactez-nous !</a></p><p> </p><h2><span style="color: #00ccff;">Spectacles de fin d'années, arbres de Noël<br /></span></h2><h3><span style="color: #ff9900;">Un événement qui crée du lien entre les salariés</span></h3><ul><li>Accédez à des <strong>propositions clé en main</strong>, parfois mutualisées avec d'autres collectifs adhérents</li><li>Organisez votre propre spectacle de fin d'année</li><li>Bénéficiez d'un <strong>large choix de spectacles à tarif préférentiel</strong>, partout en France, pour les groupes et les individuels</li></ul><p><strong><img src="mediacenter/uploads/xl/noel_1.png" alt="Noel CSE Cezam spectacle magie clowns acrobaties comique jonglage" class="media-pullRight" /><span style="color: #993366;">→ Votre événement mutualisé avec d'autres collectifs</span></strong><br />Les associations Cezam, au carrefour des initiatives des CSE, peuvent vous proposer un spectacle de fin d'année mutualisé avec un ou plusieurs collectif(s) adhérent(s).<br />Vous pourrez ainsi prévoir un accueil personnalisé pour les salariés et leur famille.</p><p><span style="color: #993366;"><strong>→ Votre événement sur mesure</strong></span><br />Recherche de spectacles, de lieux ou d'animations en tous genres, votre association Cezam peut vous accompagner dans vos démarches et mettre son savoir-faire à votre disponibilité.</p><p><span style="color: #993366;"><strong>→ Votre événement à tarif négocié</strong></span><br />Pour être au plus proche de vos besoins, Cezam vous propose un large choix de spectacles à tarifs réduits, accessibles pour les groupes comme pour les individuels.</p><p style="text-align: center;"><img src="mediacenter/uploads/s/icone-point-interrogation.png" alt="Icone point interrogation" width="40" height="40" /></p><p style="text-align: center;">Vous souhaitez en savoir plus sur nos propositions d'évenements de fin d'année ?<a href="contact.html"><br />Contactez-nous !</a></p></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="mentions-legales-2.html">Mentions légales</a></li><li><a href="donnees-personnelles-2.html">Données personnelles</a></li><li><a href="faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/animations-culturelles-cse by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:58 GMT -->
+</html>

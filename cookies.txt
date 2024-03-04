@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.cezam.fr	TRUE	/	FALSE	1999999999	widgetCezamLogin	deleted
+www.cezam.fr	TRUE	/	FALSE	1999999999	widgetCezamPassword	deleted
+www.cezam.fr	TRUE	/	FALSE	1999999999	widgetHashSession	deleted
+www.cezam.fr	TRUE	/	FALSE	1999999999	PHPSESSID	c9mdfdconmhfppmebmr8eu4bmm
+www.cezam.fr	TRUE	/	FALSE	1999999999	hl	fr
+

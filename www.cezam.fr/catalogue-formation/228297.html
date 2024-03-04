@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/catalogue-formation/228297 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:50:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Catalogue formation</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="../favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="../build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="../build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="../index.html" class="menu-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="../choix-antenne.html" class="mobile-only"><img src="../img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="../cezam.html">Accueil</a></li><li><a href="../qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="../formations-cse.html">Formations CSE</a></li><li><a href="../assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="../billetterie-cse.html">Billetterie CSE</a></li><li><a href="../carte-cezam-1.html">Carte Cezam</a></li><li><a href="../animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="../sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="../faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="../faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="../index.html"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url('../img/cezam/default_header1820.jpg?version=a60399fe');"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="../login.html#body-top"><img src="../img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="../nous-trouver.html#body-top"><img src="../img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="../contact.html#body-top"><img src="../img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = '../commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="../commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = '../commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="../index.html">Accueil</a></li><li class="active">Catalogue Formation</li></ul></div><section class="container"><a href="#" onclick="window.history.back();return false;"><i class="glyphicon glyphicon-chevron-left"></i> Retour à la liste</a><br><br><div class="main-content"><article class="catalog-detail"><div class="theme-page">Elus CSE/CE </div><h1>Prérogatives environnementales et enjeux pour les CSE </h1><div class="presentation"><div><p><span style="color: #800080;"><strong>Finalit&eacute;</strong></span><br />Pouvoir intervenir en CSE sur les enjeux environnementaux de l'entreprise en ayant d&eacute;tect&eacute; et utilis&eacute; les informations utiles dans et hors de l&rsquo;entreprise.</p><p><span style="color: #800080;"><strong>Objectifs p&eacute;dagogiques</strong></span></p><p> Comprendre le cadre l&eacute;gal issu de la loi &ldquo;Climat et r&eacute;silience&rdquo;<br /> Conna&icirc;tre les obligations des entreprises et le cadre de la responsabilit&eacute; soci&eacute;tale<br /> Savoir identifier les attentes des parties prenantes et leur influence sur l&rsquo;&eacute;volution de l&rsquo;entreprise<br /> Pr&eacute;parer l&rsquo;action en CSE sur la politique et les pratiques de l&rsquo;entreprise</p><p><span style="color: #800080;"><strong>Public et pr&eacute;requis</strong></span><br />Tout membre &eacute;lu(e) d&rsquo;un CSE, d&eacute;l&eacute;gu&eacute; ou repr&eacute;sentant syndical.<br />Formation sans pr&eacute;requis n&eacute;cessaire.</p><p>&nbsp;</p><p><span style="color: #800080;"><strong>Programme</strong></span></p><p><strong>Comprendre le cadre l&eacute;gal issu de la loi &ldquo;Climat et r&eacute;silience&rdquo;</strong><br /> Le contexte fran&ccedil;ais et europ&eacute;en de la loi Climat<br /> Les nouvelles pr&eacute;rogatives du CSE</p><p><strong>Conna&icirc;tre les obligations des entreprises et le cadre de la responsabilit&eacute; soci&eacute;tale</strong><br /> Quelques rep&egrave;res sur la responsabilit&eacute; soci&eacute;tale des entreprises<br /> Les sources et documents utiles pour le CSE</p><p><strong>Savoir identifier les attentes des parties prenantes et leur influence sur l&rsquo;&eacute;volution de l&rsquo;entreprise</strong><br /> Sur la base d&rsquo;exemples dans l&rsquo;actualit&eacute;, r&eacute;flexion sur les attentes de parties prenantes externes, leur influence sur l&rsquo;entreprise et les diff&eacute;rentes modalit&eacute;s de dialogue</p><p><strong>Pr&eacute;parer l&rsquo;action en CSE sur la politique et les pratiques de l&rsquo;entreprise</strong><br /> Comment le CSE peut-il se positionner ?<br /> Quelle organisation interne du CSE pour agir dans la dur&eacute;e ?</p><p>&nbsp;</p><p><strong><span style="color: #800080;">Dur&eacute;e :</span> 1 jour</strong></p><p><strong><span style="color: #800080;">Tarif Inter :</span>&nbsp;340 &euro; net/jour/stagiaire</strong></p><p><strong><span style="color: #800080;">Tarif Intra :</span> 1 580 &euro; net/jour</strong></p><p>&nbsp;</p><p><span style="color: #800080;"><strong>Moyens et m&eacute;thodes p&eacute;dagogiques</strong></span><br /> Alternance apports de connaissances / mises en situation<br /> M&eacute;thodes actives, ludiques, participatives et inductives<br /> Valorisation de l&rsquo;exp&eacute;rience des participants<br /> Supports digitaux et papier<br /><br /></p><p><span style="color: #800080;"><strong>&Eacute;valuation et suivi</strong></span><br /> &Eacute;valuation des acquis au fur et &agrave; mesure de la formation<br /> &Eacute;valuation de fin de formation (QCM)<br /> Questionnaire de satisfaction<br /> Suivi post formation pendant 3 mois (mail/t&eacute;l)</p><p><span style="color: #000080;"><strong>Le + de la formation :</strong></span></p><p> S&eacute;quences d&rsquo;appropriation des connaissances sur le cadre<br />juridique, les pratiques et les m&eacute;thodes dont les Instances repr&eacute;sentatives du personnel peuvent se saisir. <br /> S&eacute;quences interactives permettant &agrave; chaque participant de faire des comparaisons avec des pratiques de son CSE, d&rsquo;identifier de nouvelles modalit&eacute;s d&rsquo;influence dans son entreprise et de construire des plans d&rsquo;actions du CSE en mati&egrave;re environnementale.</p><p>&nbsp;</p></div><a href="https://activites.fedecezam.fr/upload/2Catalogue Formation 2024_web.pdf" target="_blank">Catalogue des formations Cezam Nouvelle-Aquitaine et Occitanie</a><br></div><div class="clearfix"></div><div class="tabs tabs-more"><!-- Nav tabs --><ul class="nav nav-tabs" role="tablist"><li role="presentation" class="active"><a href="#tarifs" data-id="prices" aria-controls="tarifs" role="tab" data-toggle="tab">Prochaines sessions</a></li></ul><!-- Tab panes --><div class="tab-content"><div role="tabpanel" class="tab-pane active fade in" id="tarifs"><a name="sessions"></a><table class="table table-condensed"><tr><td>
+                                                                                                                                                                                lundi 11 mars 2024
+                             - Niort                            </td><td class="text-left"><a href="228297/information/1412946.html" class="btn btn-action btn-s" style="margin:0 5px 0 0;">Demande de renseignements</a><a href="../login.html" class="btn btn-action btn-s" disabled>Demande d'inscription</a></td></tr><tr><td>
+                                                                                                                                                                                vendredi 20 septembre 2024
+                             - Niort                            </td><td class="text-left"><a href="228297/information/1915157.html" class="btn btn-action btn-s" style="margin:0 5px 0 0;">Demande de renseignements</a><a href="../login.html" class="btn btn-action btn-s" disabled>Demande d'inscription</a></td></tr></table><br><div class="alert alert-danger">L'inscription est réservée aux élus identifiés</div></div><div role="tabpanel" class="tab-pane fade" id="coordonnees"><div class="tab-content-limited catalog-addresses" ><div class="row"><div class="col-md-4"></div><div class="col-md-8"><div id="cataloMap"></div></div></div></div></div></div></div></article></div></section><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCko27H6oMYRj0HBE9MiP80dTNamlPIt7E"></script><script>
+
+    $(document).ready(function () {
+        var mapLoaded=false;
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            if($(e.target).data('id') == 'coordonnates' && !mapLoaded){
+                            }
+
+            e.relatedTarget // previous active tab
+        })
+
+
+
+
+    });
+
+    //document.addEventListener("unload", bookmark.sendRequest);
+
+
+    function closeAllInfoWindows() {
+        for (var i=0;i<infoWindows.length;i++) {
+            infoWindows[i].close();
+        }
+    }
+    var infoWindows = [];
+    var markersCount = 0;
+    var markers = [];
+    function initializeMap() {
+        map = new google.maps.Map(document.getElementById('cataloMap'), {
+            zoom: 10,
+            center: new google.maps.LatLng('48.859268', '2.347404')
+        });
+        var maxLat = -99, maxLng = -99, minLat = 99, minLng = 99;
+                
+        if (markersCount > 1){
+            var rectangleAffichage = new google.maps.LatLngBounds();
+            zoom_top_left=new google.maps.LatLng(maxLat,minLng);
+            zoom_bottom_right=new google.maps.LatLng(minLat,maxLng);
+            rectangleAffichage.extend(zoom_top_left);
+            rectangleAffichage.extend(zoom_bottom_right);
+            map.fitBounds(rectangleAffichage);
+        }else{
+            map.setCenter(new google.maps.LatLng(maxLat,minLng));
+        }
+
+    }
+</script></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="../mentions-legales-2.html">Mentions légales</a></li><li><a href="../donnees-personnelles-2.html">Données personnelles</a></li><li><a href="../faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="../faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="../js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/catalogue-formation/228297 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:50:02 GMT -->
+</html>

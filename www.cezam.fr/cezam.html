@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/cezam by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Cezam | 1er réseau de coopération entre élus de cse</title><meta name="description" content="Plus de 6000 CSE adhérents, 1 million de bénéficiaires, proximité, avantages billetterie, vacances, culture, formation d&#039;élus, logiciel ASC..."><link rel="icon" type="image/x-icon" href="favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header main-header--fixed"><div id="headerMenu-responsive"><div class="menu-items "><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="active first"><a href="cezam.html">Accueil</a></li><li><a href="qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="formations-cse.html">Formations CSE</a></li><li><a href="assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="billetterie-cse.html">Billetterie CSE</a></li><li><a href="carte-cezam-1.html">Carte Cezam</a></li><li><a href="animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"></section><div class="headerMenu-brand main-header--mini-hidden"><img src="img/cezam/discover/logo-cezam1820.png?version=a60399fe" alt="Logo" class="headerMenu-brand-logo"/>
+        Premier réseau de coopération entre CSE
+    </div><ul class="functions-menu functions-menu--home functions-menu--mobile-top"><li data-tuto-step="2"><a href="login.html#body-top"><img src="img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li data-tuto-step="3"><a href="nous-trouver.html#body-top"><img src="img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li data-tuto-step="4"><a href="contact.html#body-top"><img src="img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li><li data-tuto-step="5" class="menu-link-toggle menu-link-toggle--home"><div class="hamburger"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div><div class="menu-label">Menu</div></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = 'commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = 'commande/panier.html';
+        }
+
+    }
+</script><div class="Home"><div class="Home-intro"><div class="Home-intro-image"></div><div class="Home-intro-content"><h1 class="Home-intro-title">Changez votre quotidien avec Cezam !</h1><h3 class="Home-intro-subtitle">Un réseau d’associations à l’écoute de vos besoins, implanté sur tout le territoire</h3></div><div class="Home-intro-text"><div class="Home-intro-text-content"><p>Depuis 40 ans, à l’initiative d’élus de comités d’entreprise, le Réseau Cezam développe un concept original de coopération et de mutualisation entre CSE et collectifs adhérents.</p><p><a href="qui-sommes-nous-1.html">Lire la suite</a></p></div></div></div><div class="Home-news"><h2 class="Home-title text-center">Actualités</h2><div class="Home-news-slider"><article class="Home-news-slider-item"><div class="Home-news-slider-item-picture"><div class="Home-news-item-imageContainer"><img src="mediacenter/uploads/m/formation-cse-cezam4.png" alt="Formation cse cezam4" /></div><div class="Home-news-slider-item-title">Nos formations pour les élus de CSE</div></div><div class="Home-news-slider-item-text"><p >Une centaine de formations proposées sur toute la France !</p><a href="cezam/nos-formations-pour-les-elus-de-cse.html">Lire la suite</a></div></article><article class="Home-news-slider-item"><div class="Home-news-slider-item-picture"><div class="Home-news-item-imageContainer"><img src="mediacenter/uploads/m/visuel-pr-hors-co-2024.png" alt="Visuel pr hors co 2024" /></div><div class="Home-news-slider-item-title">Le Prix du roman Cezam 2024</div></div><div class="Home-news-slider-item-text"><p >Proposez une activité originale en dynamisant la lecture au sein de votre entreprise</p><a href="cezam/le-prix-du-roman-cezam-2024.html">Lire la suite</a></div></article><article class="Home-news-slider-item"><div class="Home-news-slider-item-picture"><div class="Home-news-item-imageContainer"><img src="mediacenter/uploads/m/maif-2.png" alt="" /></div><div class="Home-news-slider-item-title">MAIF : Une assurance multirisque CSE</div></div><div class="Home-news-slider-item-text"><p >Un contrat d&#039;assurance élaboré en partenariat avec MAIF</p><a href="cezam/maif-une-assurance-multirisque-cse.html">Lire la suite</a></div></article><article class="Home-news-slider-item"><div class="Home-news-slider-item-picture"><div class="Home-news-item-imageContainer"><img src="mediacenter/uploads/m/visuel-portail-sept.png" alt="Visuel portail sept" /></div><div class="Home-news-slider-item-title">Transition écologique</div></div><div class="Home-news-slider-item-text"><p >Des moyens d&#039;actions pour les CSE existent</p><a href="cezam/transition-ecologique-1.html">Lire la suite</a></div></article><article class="Home-news-slider-item"><div class="Home-news-slider-item-picture"><div class="Home-news-item-imageContainer"><img src="mediacenter/uploads/m/appli22-112.png" alt="Appli22 11" /></div><div class="Home-news-slider-item-title">Application Ma carte Cezam</div></div><div class="Home-news-slider-item-text"><p >Des milliers d&#039;avantages ... sur votre smartphone !</p><a href="cezam/application-ma-carte-cezam.html">Lire la suite</a></div></article></div></div><div class="Home-figures"><h2 class="Home-title text-center">Le Réseau Cezam en France</h2><div class="Home-figures-slider"><figure><img src="img/cezam/discover/picto-users1820.png?version=a60399fe" alt="pictogramme spécifique bénéficiaires" title="1 000 000 bénéficiaires"  height="110"/><figcaption><div class="Home-figures-slide-title">1 000 000</div>de b&eacute;n&eacute;ficiaires</figcaption></figure><figure><img src="img/cezam/discover/picto-orga1820.png?version=a60399fe" alt="pictogramme spécifique collectifs adhérents" title="6 000 collectifs adhérents"  height="110"/><figcaption><div class="Home-figures-slide-title">6 000</div>collectifs adh&eacute;rents</figcaption></figure><figure><img src="img/cezam/discover/picto-elu1820.png?version=a60399fe" alt="pictogramme spécifique bénéficiaires" title="500 élus administrants Cezam"  height="110"/><figcaption><div class="Home-figures-slide-title">500</div>&eacute;lus administrant Cezam</figcaption></figure><figure><img src="img/cezam/discover/picto-experience1820.png?version=a60399fe" alt="pictogramme spécifique expérience" title="37 ans d'expérience"  height="110"/><figcaption><div class="Home-figures-slide-title">40</div>années d'exp&eacute;rience</figcaption></figure><figure><img src="img/cezam/discover/picto-partenaires1820.png?version=a60399fe" alt="pictogramme spécifique partenaires" title="15 000 partenaires" height="110"/><figcaption><div class="Home-figures-slide-title">15 000</div>partenaires</figcaption></figure><figure><img src="img/cezam/discover/picto-offres1820.png?version=a60399fe" alt="pictogramme spécifique bénéficiaires" title=">40 000< offres remisées"  height="110"/><figcaption><div class="Home-figures-slide-title">40 000</div>offres remisées</figcaption></figure></div></div><div class="Home-services Home-services--elus"><h2 class="Home-services-title">Au service<br><strong>des élus</strong><br>de <strong>CSE</strong></h2><div class="Home-services-items"><div class="Home-services-item Home-services-item--selected"><div class="Home-services-detail"><div class="Home-services-detail-text"><p>Un accompagnement complet, adapté à vos besoins</p></div></div></div><div class="Home-services-item" rel="Home-services-elus-1"><div class="Home-services-heading"><strong>Développez vos compétences</strong><br>
+                        Formation / Appui-conseil / Accompagnement<br>
+                        Rencontres et salons
+                    </div><div class="Home-services-detail" id="Home-services-elus-1"><div class="Home-services-detail-text"><p style="font-size: 2em;">Bénéficiez de nos conseils et de notre expertise</p><p><a class="btn btn-action btn-transparent-orange" href="formations-cse.html">En savoir plus</a></p></div></div></div><div class="Home-services-item" rel="Home-services-elus-2"><div class="Home-services-heading"><strong>Optimisez votre temps de délégation</strong><br>
+                        Assistance technique
+                    </div><div class="Home-services-detail" id="Home-services-elus-2"><div class="Home-services-detail-text"><p>Confiez-nous vos tâches courantes</p><p><a class="btn btn-default" href="assistance-technique-cse.html">En savoir plus</a></p></div></div></div><div class="Home-services-item" rel="Home-services-elus-3"><div class="Home-services-heading"><strong>Bénéficiez d'un service adapté à vos besoins</strong><br>
+                        Billetterie / Subvention / Logiciel de gestion
+                    </div><div class="Home-services-detail" id="Home-services-elus-3"><div class="Home-services-detail-text"><p>Simplifiez la gestion de votre billetterie</p><p><a class="btn btn-default" href="billetterie-cse.html">En savoir plus</a></p></div></div></div></div><br><br><div class="text-center"><a href="compte-adherent-demo.html" class="btn btn-action btn-transparent-rose">Demander un compte démo</a></div></div><div class="Home-services Home-services--salaries"><h2 class="Home-services-title">Au<br>bénéfice des<br><strong>salariés</strong></h2><div class="Home-services-items"><div class="Home-services-item Home-services-item--selected"><div class="Home-services-detail"><div class="Home-services-detail-text"><p>Des propositions variées et originales pour enrichir vos Activités Sociales et Culturelles</p></div></div></div><div class="Home-services-item" rel="Home-services-salaries-1"><div class="Home-services-heading"><strong>Donnez du pouvoir d'accès</strong><br>
+                        Carte Cezam / Billetterie / Bons d'achats
+                    </div><div class="Home-services-detail" id="Home-services-salaries-1"><div class="Home-services-detail-text"><p>Place aux loisirs et à la découverte !</p><p><a class="btn btn-default" href="carte-cezam-1.html">En savoir plus</a></p></div></div></div><div class="Home-services-item" rel="Home-services-salaries-2"><div class="Home-services-heading"><strong>Créez du lien</strong><br>
+                        Spectacle de fin d'année / Animations culturelles
+                    </div><div class="Home-services-detail" id="Home-services-salaries-2"><div class="Home-services-detail-text"><p>Des activités simples et originales favorisant l’échange entre salariés</p><p><a class="btn btn-default" href="animations-culturelles-cse.html">En savoir plus</a></p></div></div></div><div class="Home-services-item" rel="Home-services-salaries-3"><div class="Home-services-heading"><strong>Facilitez l'accès aux vacances</strong><br>
+                        Tourisme
+                    </div><div class="Home-services-detail" id="Home-services-salaries-3"><div class="Home-services-detail-text"><p>Une proposition variée de sorties et voyages</p><p><a class="btn btn-default" href="sorties-voyages-sejours.html">En savoir plus</a></p></div></div></div></div></div><div class="Home-contact"><h2 class="Home-title text-center">Rejoignez-nous !</h2><div class="Home-contact-items"><div class="Home-contact-item"><img src="img/cezam/discover/picto-contact-adherent1820.png?version=a60399fe"  class="Home-contact-item-image" alt="" /><br><a href="devenir-adherent.html"  class="Home-contact-item-title">Devenir adhérent</a><br>
+                    Vous êtes une structure représentative du personnel (CSE, CCE, CAS, COS, amicale ou association de personnel...) ?
+                </div><div class="Home-contact-item"><img src="img/cezam/discover/picto-contact-partenaire1820.png?version=a60399fe"  class="Home-contact-item-image" alt="" /><br><a href="devenir-partenaire.html" class="Home-contact-item-title">Devenir partenaire</a><br>
+                    Vous souhaitez, vous aussi, rejoindre un réseau associatif et coopératif ?<br>
+                    N'attendez plus, c’est rapide et très simple !
+                </div><div class="Home-contact-item"><img src="img/cezam/discover/picto-contact-porteur1820.png?version=a60399fe"  class="Home-contact-item-image" alt="" /><br><a href="choix-antenne05e5.html?target=obtenir-carte-cezam"  class="Home-contact-item-title">Obtenir la carte Cezam</a><br>
+                    Vous souhaitez connaître les modalités d'obtention d'une carte Cezam ?
+                </div></div></div></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="mentions-legales-2.html">Mentions légales</a></li><li><a href="donnees-personnelles-2.html">Données personnelles</a></li><li><a href="faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script><script>
+    $(document).ready(function () {
+
+        $(".Home-news-slider").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 3,
+            draggable: true,
+            autoplay: false,
+            responsive: [
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+
+        $(".Home-figures-slider").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            draggable: true,
+            autoplay: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+            ]
+        });
+
+        $(".Home-services-item").click(function(){
+            $(this).parent().find(".Home-services-item").removeClass('Home-services-item--selected');
+            $(this).toggleClass('Home-services-item--selected');
+        });
+        $('.Home-contact-item, .Home-news-slider-item').click(function(){
+            var href = $(this).find('a').attr('href');
+            if (href){
+                window.location = href;
+            }
+        });
+
+        $(document).scroll(function () {
+            if ($(this).scrollTop() > 130) {
+                $('.main-header--fixed').addClass('main-header--fixed--mini');
+            }else{
+                $('.main-header--fixed').removeClass('main-header--fixed--mini');
+            }
+        });
+
+    });
+</script></body>
+<!-- Mirrored from www.cezam.fr/cezam by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:39:35 GMT -->
+</html>

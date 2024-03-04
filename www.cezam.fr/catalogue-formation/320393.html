@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/catalogue-formation/320393 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Catalogue formation</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="../favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="../build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="../build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="../index.html" class="menu-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="../choix-antenne.html" class="mobile-only"><img src="../img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="../cezam.html">Accueil</a></li><li><a href="../qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="../formations-cse.html">Formations CSE</a></li><li><a href="../assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="../billetterie-cse.html">Billetterie CSE</a></li><li><a href="../carte-cezam-1.html">Carte Cezam</a></li><li><a href="../animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="../sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="../faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="../faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="../index.html"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url('../img/cezam/default_header1820.jpg?version=a60399fe');"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="../login.html#body-top"><img src="../img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="../nous-trouver.html#body-top"><img src="../img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="../contact.html#body-top"><img src="../img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = '../commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="../commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = '../commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="../index.html">Accueil</a></li><li class="active">Catalogue Formation</li></ul></div><section class="container"><a href="#" onclick="window.history.back();return false;"><i class="glyphicon glyphicon-chevron-left"></i> Retour à la liste</a><br><br><div class="main-content"><article class="catalog-detail"><div class="theme-page">Santé, sécurité et conditions de travail</div><h1>Santé, sécurité et conditions de travail : Assurer son premier mandat d’élu(e)s au CSE et au sein de la CSSCT</h1><h2>Formation disponible à distance </h2><div class="presentation"><div><div><p><span style="color: #800080;"><strong>Finalit&eacute;</strong></span><br />Acqu&eacute;rir des connaissances initiales et des pratiques n&eacute;cessaires afin de contribuer &agrave; la pr&eacute;vention des risques professionnels ainsi qu&rsquo;&agrave; l&rsquo;am&eacute;lioration des conditions de travail dans son entreprise.&nbsp;</p><p><span style="color: #800080;"><strong>Objectifs p&eacute;dagogiques</strong></span></p><p> Conna&icirc;tre le cadre l&eacute;gislatif de la sant&eacute; au travail et les attributions du CSE en mati&egrave;re de sant&eacute;, s&eacute;curit&eacute; et conditions de travail (SSCT)<br /> D&eacute;velopper son aptitude &agrave; identifier et analyser les risques professionnels pour participer &agrave; leur pr&eacute;vention<br /> Savoir coop&eacute;rer et agir pour le maintien en emploi des salari&eacute;s<br /> Appr&eacute;hender les situations des risques psychosociaux<br /> Conna&icirc;tre le fonctionnement et les moyens du CSE pour agir en mati&egrave;re de SSCT</p><p><span style="color: #800080;"><strong>Public et pr&eacute;requis</strong></span><br />Tout membre &eacute;lu(e) suppl&eacute;ant ou titulaire au CSE souhaitant effectuer leur formation initiale durant leur 1er mandat. Il est pr&eacute;f&eacute;rable d&rsquo;avoir suivi la formation de 2 jours sur le r&ocirc;le et le fonctionnement du CSE ou d&rsquo;avoir une connaissance pr&eacute;alable des missions du CSE.<br />Tout membre de la commission SSCT dans les entreprises d'au moins trois cents salari&eacute;s, en cas de renouvellement de mandat.</p><p>&nbsp;</p><p><span style="color: #800080;"><strong>Programme</strong></span></p><p><strong>Conna&icirc;tre le cadre l&eacute;gislatif de la sant&eacute; au travail et les attributions du CSE en mati&egrave;re de sant&eacute; s&eacute;curit&eacute; et conditions de travail (SSCT)</strong><br /> Un peu d&rsquo;histoire<br /> Les obligations de l&rsquo;employeur<br /> Les attributions du CSE</p><p><strong>D&eacute;velopper son aptitude &agrave; identifier et analyser les risques professionnels pour participer &agrave; leur pr&eacute;vention</strong><br /> D&eacute;finition du risque professionnel<br /> L&rsquo;identification et l&rsquo;analyse des risques professionnels<br /> La contribution du CSE &agrave; la d&eacute;marche de pr&eacute;vention<br /> Les documents incontournables (DUER, PAPRIPACT&hellip;)<br /> Les accidents de travail et les maladies professionnelles<br /> Les enqu&ecirc;tes du CSE<br /> Les inspections du CSE</p><p><strong>Savoir coop&eacute;rer et agir pour le maintien en emploi des salari&eacute;s</strong></p><p> D&eacute;finition de la d&eacute;sinsertion professionnelle<br /> Focus sur l&rsquo;inaptitude et le handicap au travail<br /> Le maintien en emploi des salari&eacute;s</p><p><strong>Appr&eacute;hender les situations des risques psychosociaux</strong><br /> Comprendre les RPS<br /> Identifier les causes et les cons&eacute;quences des RPS<br /> Focus sur les notions de harc&egrave;lement moral, sexuel et d&rsquo;agissements sexistes</p><p><strong>Conna&icirc;tre le fonctionnement et les moyens du CSE pour agir en mati&egrave;re de SSCT</strong><br /> Les r&eacute;unions<br /> La commission sant&eacute;, s&eacute;curit&eacute; et conditions de travail (CSSCT)<br /> Les heures de d&eacute;l&eacute;gation<br /> Le droit &agrave; la formation SSCT<br /> L&rsquo;information et la consultation<br /> Les moyens juridiques<br /> Le recours &agrave; l&rsquo;expertise</p><p>&nbsp;</p><p><strong><span style="color: #800080;">Dur&eacute;e</span> :&nbsp;5 jours (fractionn&eacute; en 3 jours et 2 jours)</strong></p><p><strong><span style="color: #800080;">Tarif Inter</span>&nbsp; :&nbsp;335 &euro; net/jour/stagiaire</strong></p><p><strong><span style="color: #800080;">Tarif Intra</span>&nbsp; :&nbsp;1 580 &euro; net/jour</strong></p><p>&nbsp;</p><p><strong><span style="color: #800080;">Moyens et m&eacute;thodes p&eacute;dagogiques</span><br /></strong> Alternance apports de connaissances/partage d&rsquo;exp&eacute;riences/<br />mises en situation<br /> M&eacute;thodes actives, ludiques, participatives et inductives<br /> Valorisation de l&rsquo;exp&eacute;rience des participants<br /> Supports digitaux et papier<br /><br /></p><p><span style="color: #800080;"><strong>&Eacute;valuation et suivi</strong></span><br /> &Eacute;valuation des acquis au fur et &agrave; mesure de la formation<br /> Validation par cas pratique et mise en situation<br /> &Eacute;valuation de fin de formation (QCM)<br /> Questionnaire de satisfaction<br /> Suivi post formation pendant 3 mois (mail/t&eacute;l)</p><p><span style="color: #000080;"><strong>Le + de la formation :&nbsp;</strong></span></p><p> Une cl&eacute; USB contenant des ressources et des outils est remise &agrave; chaque stagiaire.<br /> Approfondissement de la m&eacute;thode de l'arbre des causes.<br /> A jour de la loi n&deg; 2021-1018 du 2 ao&ucirc;t 2021 pour renforcer la pr&eacute;vention en sant&eacute; au travail.<br /> La construction d&rsquo;un plan d&rsquo;action adapt&eacute; &agrave; son CSE ou &agrave; sa commission sant&eacute;, s&eacute;curit&eacute; et conditions de travail (CSSCT).</p><p>&nbsp;</p><p><span style="color: #000080;"><strong>Dates et lieux :&nbsp;</strong></span></p><p><strong>Montauban (82)</strong><br />&gt; 17, 18, 19 avril et 25, 26 mai 2023</p><p>&gt; 19, 20, 21&nbsp;juin et 06, 07&nbsp;juillet 2023</p><p>&gt; 22, 23, 24&nbsp;novembre et 11, 12 d&eacute;cembre 2023</p><p>&nbsp;</p></div></div><a href="https://activites.fedecezam.fr/upload/Catalogue Formation Cezam 2023-Version finale WEB.pdf" target="_blank">Catalogue des formations Cezam Nouvelle-Aquitaine et Occitanie</a><br></div><div class="clearfix"></div><div class="tabs tabs-more"><!-- Nav tabs --><ul class="nav nav-tabs" role="tablist"><li role="presentation" class="active"><a href="#tarifs" data-id="prices" aria-controls="tarifs" role="tab" data-toggle="tab">Prochaines sessions</a></li></ul><!-- Tab panes --><div class="tab-content"><div role="tabpanel" class="tab-pane active fade in" id="tarifs"><a name="sessions"></a><table class="table table-condensed"><tr><td></td><td class="text-left"><a href="320393/information/1942158.html" class="btn btn-action btn-s" style="margin:0 5px 0 0;">Demande de renseignements</a><a href="../login.html" class="btn btn-action btn-s" disabled>Demande d'inscription</a></td></tr></table><br><div class="alert alert-danger">L'inscription est réservée aux élus identifiés</div></div><div role="tabpanel" class="tab-pane fade" id="coordonnees"><div class="tab-content-limited catalog-addresses" ><div class="row"><div class="col-md-4"></div><div class="col-md-8"><div id="cataloMap"></div></div></div></div></div></div></div></article></div></section><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCko27H6oMYRj0HBE9MiP80dTNamlPIt7E"></script><script>
+
+    $(document).ready(function () {
+        var mapLoaded=false;
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            if($(e.target).data('id') == 'coordonnates' && !mapLoaded){
+                            }
+
+            e.relatedTarget // previous active tab
+        })
+
+
+
+
+    });
+
+    //document.addEventListener("unload", bookmark.sendRequest);
+
+
+    function closeAllInfoWindows() {
+        for (var i=0;i<infoWindows.length;i++) {
+            infoWindows[i].close();
+        }
+    }
+    var infoWindows = [];
+    var markersCount = 0;
+    var markers = [];
+    function initializeMap() {
+        map = new google.maps.Map(document.getElementById('cataloMap'), {
+            zoom: 10,
+            center: new google.maps.LatLng('48.859268', '2.347404')
+        });
+        var maxLat = -99, maxLng = -99, minLat = 99, minLng = 99;
+                
+        if (markersCount > 1){
+            var rectangleAffichage = new google.maps.LatLngBounds();
+            zoom_top_left=new google.maps.LatLng(maxLat,minLng);
+            zoom_bottom_right=new google.maps.LatLng(minLat,maxLng);
+            rectangleAffichage.extend(zoom_top_left);
+            rectangleAffichage.extend(zoom_bottom_right);
+            map.fitBounds(rectangleAffichage);
+        }else{
+            map.setCenter(new google.maps.LatLng(maxLat,minLng));
+        }
+
+    }
+</script></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="../mentions-legales-2.html">Mentions légales</a></li><li><a href="../donnees-personnelles-2.html">Données personnelles</a></li><li><a href="../faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="../faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="../js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/catalogue-formation/320393 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:03 GMT -->
+</html>

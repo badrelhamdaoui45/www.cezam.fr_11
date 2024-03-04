@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/catalogue-formation/334455/information/2013236 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:52:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Catalogue formation</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="../../../favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="../../../build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="../../../build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../../../../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="../../../index.html" class="menu-logo"><img src="../../../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="../../../choix-antenne.html" class="mobile-only"><img src="../../../img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="../../../cezam.html">Accueil</a></li><li><a href="../../../qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="../../../formations-cse.html">Formations CSE</a></li><li><a href="../../../assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="../../../billetterie-cse.html">Billetterie CSE</a></li><li><a href="../../../carte-cezam-1.html">Carte Cezam</a></li><li><a href="../../../animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="../../../sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="../../../faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="../../../faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="../../../index.html"><img src="../../../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url('../../../img/cezam/default_header1820.jpg?version=a60399fe');"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="../../../login.html#body-top"><img src="../../../img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="../../../nous-trouver.html#body-top"><img src="../../../img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="../../../contact.html#body-top"><img src="../../../img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = '../../../commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="../../../commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = '../../../commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="../../../index.html">Accueil</a></li><li class="active">Catalogue Formation</li></ul></div><div class="mainBody-section"><h1>Demande de renseignements</h1><h2>Exercer son mandat d&#039;élu dans le cadre du CSE</h2><h3>
+                    Du 11 au 12 avril 2024
+                     - BREST                </h3><div style="max-width:500px;margin:0 auto;"><form name="training_information" method="post"><div id="training_information"><div class="form-group"><label class="control-label required" for="training_information_entityName">Nom du CSE/CE ou collectif</label><input type="text" id="training_information_entityName" name="training_information[entityName]" required="required" class="form-control" /></div><div class="form-group"><label class="control-label required" for="training_information_name">Vos nom et prénom</label><input type="text" id="training_information_name" name="training_information[name]" required="required" class="form-control" /></div><div class="form-group"><label class="control-label required" for="training_information_function">Votre fonction</label><input type="text" id="training_information_function" name="training_information[function]" required="required" class="form-control" /></div><div class="form-group"><label class="control-label required" for="training_information_address">Adresse</label><textarea id="training_information_address" name="training_information[address]" required="required" class="form-control"></textarea></div><div class="form-group"><label class="control-label required" for="training_information_zipCode">Code postal</label><input type="text" id="training_information_zipCode" name="training_information[zipCode]" required="required" placeholder="ex: 75000" pattern="\d{5}" class="form-control" /></div><div class="form-group"><label class="control-label required" for="training_information_city">Ville</label><input type="text" id="training_information_city" name="training_information[city]" required="required" class="form-control" /></div><div class="form-group"><label class="control-label required" for="training_information_phone">Téléphone</label><input type="text" id="training_information_phone" name="training_information[phone]" required="required" class="form-control" /></div><div class="form-group"><label class="control-label required" for="training_information_email">E-mail</label><input type="email" id="training_information_email" name="training_information[email]" required="required" class="form-control" /></div><div class="form-group"><label class="control-label" for="training_information_message">Votre message</label><textarea id="training_information_message" name="training_information[message]" class="form-control"></textarea></div><div class="form-group"><script type="text/javascript" src="../../../../www.google.com/recaptcha/api7d7c.js?hl=fr"></script><div class="g-recaptcha" data-theme="light" data-size="normal" data-type="image" data-sitekey="6LfJrncUAAAAACodI4THTyPn6VN3nkuJAJ7Un8EX" data-callback="" data-expired-callback="" data-bind="" data-badge=""></div><noscript><div style="width: 302px; height: 352px;"><div style="width: 302px; height: 352px; position: relative;"><div style="width: 302px; height: 352px; position: absolute;"><iframe src="https://www.google.com/recaptcha/api/fallback?k=6LfJrncUAAAAACodI4THTyPn6VN3nkuJAJ7Un8EX"
+                                    frameborder="0" scrolling="no"
+                                    style="width: 302px; height:352px; border-style: none;"
+                            ></iframe></div><div style="width: 250px; height: 80px; position: absolute; border-style: none; bottom: 21px; left: 25px; margin: 0; padding: 0; right: 25px;"><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                      class="g-recaptcha-response"
+                                      style="width: 250px; height: 80px; border: 1px solid #c1c1c1; margin: 0; padding: 0; resize: none;"
+                            ></textarea></div></div></div></noscript></div><div class="form-group"><button type="submit" id="training_information_submit" name="training_information[submit]" class="btn-action btn">Envoyer la demande de renseignements</button></div><input type="hidden" id="training_information__token" name="training_information[_token]" value="C9EvbA97z6ToPLcoPZa3o27bAFDYIUh8awM_cpGTf50" /></div></form><div class="mandatory-legend">Champ obligatoire</div></div></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="../../../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="../../../mentions-legales-2.html">Mentions légales</a></li><li><a href="../../../donnees-personnelles-2.html">Données personnelles</a></li><li><a href="../../../faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="../../../faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="../../../js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/catalogue-formation/334455/information/2013236 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:52:38 GMT -->
+</html>

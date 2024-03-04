@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/catalogue-formation/254735 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Catalogue formation</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="../favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="../build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="../build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="../index.html" class="menu-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="../choix-antenne.html" class="mobile-only"><img src="../img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="../cezam.html">Accueil</a></li><li><a href="../qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="../formations-cse.html">Formations CSE</a></li><li><a href="../assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="../billetterie-cse.html">Billetterie CSE</a></li><li><a href="../carte-cezam-1.html">Carte Cezam</a></li><li><a href="../animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="../sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="../faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="../faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="../index.html"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url('../img/cezam/default_header1820.jpg?version=a60399fe');"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="../login.html#body-top"><img src="../img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="../nous-trouver.html#body-top"><img src="../img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="../contact.html#body-top"><img src="../img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = '../commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="../commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = '../commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="../index.html">Accueil</a></li><li class="active">Catalogue Formation</li></ul></div><section class="container"><a href="#" onclick="window.history.back();return false;"><i class="glyphicon glyphicon-chevron-left"></i> Retour à la liste</a><br><br><div class="main-content"><article class="catalog-detail"><div class="theme-page">Bureautique - Web - Communication</div><h1>Dialogue social : formation commune employeur et élu(e)s au CSE</h1><div class="presentation"><div><p><br />Nous croyons que pour gagner en efficacit&eacute;, les entreprises se doivent d&rsquo;investir dans un dialogue social de qualit&eacute;.<br />Mais comment construire ce dialogue social &laquo; de qualit&eacute; &raquo; ?<br />Travailler collectivement aux diff&eacute;rentes probl&eacute;matiques de l&rsquo;entreprise passe en tout premier lieu par l&rsquo;&eacute;coute, la compr&eacute;hension des acteurs partie prenante de ce dialogue social : employeur, salari&eacute;s et leurs repr&eacute;sentants. Ces bases permettront ensuite le consensus, la co-construction de solutions, la n&eacute;gociation, la mise en place de plans d&rsquo;actions.<br />Aussi, nous vous proposons une formation commune aux dirigeants et repr&eacute;sentants des salari&eacute;s. Nous pouvons construire ensemble le programme sur-mesure de cette formation, &agrave; la fois en ce qui concerne les th&egrave;mes abord&eacute;s et les m&eacute;thodes utilis&eacute;es.</p><p style="text-align: center;"><strong>Exemple de programme : </strong><br /><strong>Formation action : co-construire le plan de travail du dialogue social dans l&rsquo;entreprise</strong></p><p><strong><span style="color: #800080;">Finalit&eacute; :</span></strong></p><p><span style="color: #000000;">Permettre aux participants d&rsquo;&eacute;laborer conjointement un calendrier de discussions, de consultations et de n&eacute;gociation, avec l&rsquo;identification des rendez-vous annuels du dialogue social, mais en int&eacute;grant &eacute;galement les &eacute;tapes des projets et travaux sp&eacute;cifiques &agrave; l&rsquo;entreprise.&nbsp;</span></p><p><span style="color: #800080;"><strong>Objectifs p&eacute;dagogiques</strong></span><br /> Partager les enjeux &eacute;conomiques et sociaux de l&rsquo;entreprise <br /> Comprendre la place des acteurs du dialogue social dans l&rsquo;entreprise<br /> Identifier des m&eacute;thodes pour une pratique du dialogue social dynamique<br /> &Eacute;laborer un calendrier des groupes de travail/consultations/n&eacute;gociations</p><p><span style="color: #800080;"><strong>Public et pr&eacute;requis</strong></span><br />Cette formation s&rsquo;adresse &agrave; tout acteur du dialogue social d&rsquo;une m&ecirc;me entreprise : employeur, responsable RH, &eacute;lu(e)s de CSE, d&eacute;l&eacute;gu&eacute;s syndicaux, n&eacute;gociateurs, ...&nbsp;&nbsp;</p><p><span style="color: #800080;"><strong>Programme</strong></span></p><p><strong>Partager les enjeux &eacute;conomiques et sociaux de l&rsquo;entreprise</strong><br /> Diagnostic partag&eacute; <br /> Les probl&eacute;matiques &eacute;conomiques et sociales de l&rsquo;entreprise, du secteur d&rsquo;activit&eacute;, du territoire <br /> Les forces et faiblesses, les d&eacute;fis et les opportunit&eacute;s</p><p><strong>Comprendre la place des acteurs du dialogue social dans l&rsquo;entreprise</strong><br /> L&rsquo;histoire et la culture du dialogue social en France<br /> Pr&eacute;rogatives des repr&eacute;sentants du personnel : CSE et organisations syndicales<br /> R&ocirc;le de l&rsquo;employeur et de ses repr&eacute;sentants <br /> Concertation, int&eacute;r&ecirc;ts respectifs</p><p><strong>Identifier des m&eacute;thodes pour une pratique du dialogue social dynamique</strong><br /> R&eacute;flexion partag&eacute;e sur les facteurs cl&eacute;s favorisant le dialogue <br /> Rep&egrave;res m&eacute;thodologiques</p><p><strong>&Eacute;laborer un calendrier des groupes de travail/consultations/n&eacute;gociations</strong><br /> Identifier les rendez-vous incontournables : consultations obligatoires, n&eacute;gociations <br /> Int&eacute;grer la concertation sur les travaux sp&eacute;cifiques &agrave; l&rsquo;entreprise <br /> Int&eacute;grer les temps de pr&eacute;paration, de remise d&rsquo;informations pr&eacute;alables dans une logique de retro planning</p><p>&nbsp;</p><p><strong><span style="color: #800080;">Dur&eacute;e :&nbsp;</span>2 jours</strong></p><p><strong><span style="color: #800080;">Tarif Inter :</span>&nbsp;Nous consulter&nbsp;</strong></p><p><strong><span style="color: #800080;">Tarif Intra :</span>&nbsp;Nous consulter</strong></p><p>&nbsp;</p><p><span style="color: #800080;"><strong>Moyens et m&eacute;thodes p&eacute;dagogiques</strong></span><br /> Alternance apports de connaissances / mises en situation<br /> Mise en perspective de l&rsquo;exp&eacute;rience des participants <br /> Supports digitaux et papiers.</p><p><span style="color: #800080;"><strong>&Eacute;valuation et suivi</strong></span><br /> &Eacute;valuation de fin de formation (QCM)<br /> Questionnaire de satisfaction<br /> Suivi post formation pendant 3 mois (mail/t&eacute;l)</p><p><span style="color: #000080;"><strong>Le + de la formation :</strong></span></p><p> Des formateurs ou formatrices sp&eacute;cialis&eacute;(e)s dans le dialogue social et d'horizons diff&eacute;rents animent les d&eacute;bats et aident &agrave; la construction du dialogue social.</p><p><span style="color: #000080;"><strong>Dates et lieux : </strong></span></p><p>Nous consulter</p><p>&nbsp;</p></div><a href="https://activites.fedecezam.fr/upload/2Catalogue Formation 2024_web.pdf" target="_blank">Catalogue des formations Cezam Nouvelle-Aquitaine et Occitanie</a><br></div><div class="clearfix"></div><div class="tabs tabs-more"><!-- Nav tabs --><ul class="nav nav-tabs" role="tablist"><li role="presentation" class="active"><a href="#tarifs" data-id="prices" aria-controls="tarifs" role="tab" data-toggle="tab">Prochaines sessions</a></li></ul><!-- Tab panes --><div class="tab-content"><div role="tabpanel" class="tab-pane active fade in" id="tarifs"><a name="sessions"></a><table class="table table-condensed"><tr><td>
+                                                                                                                                                                                                                                                                                                                                                                                                                    Du 06 au 07 juin 2024
+                             - Niort                            </td><td class="text-left"><a href="254735/information/2069173.html" class="btn btn-action btn-s" style="margin:0 5px 0 0;">Demande de renseignements</a><a href="../login.html" class="btn btn-action btn-s" disabled>Demande d'inscription</a></td></tr><tr><td>
+                                                                                                                                                                                                                                                                                                                                                                                                                    Du 03 au 04 octobre 2024
+                             - Niort                            </td><td class="text-left"><a href="254735/information/2069174.html" class="btn btn-action btn-s" style="margin:0 5px 0 0;">Demande de renseignements</a><a href="../login.html" class="btn btn-action btn-s" disabled>Demande d'inscription</a></td></tr></table><br><div class="alert alert-danger">L'inscription est réservée aux élus identifiés</div></div><div role="tabpanel" class="tab-pane fade" id="coordonnees"><div class="tab-content-limited catalog-addresses" ><div class="row"><div class="col-md-4"></div><div class="col-md-8"><div id="cataloMap"></div></div></div></div></div></div></div></article></div></section><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCko27H6oMYRj0HBE9MiP80dTNamlPIt7E"></script><script>
+
+    $(document).ready(function () {
+        var mapLoaded=false;
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            if($(e.target).data('id') == 'coordonnates' && !mapLoaded){
+                            }
+
+            e.relatedTarget // previous active tab
+        })
+
+
+
+
+    });
+
+    //document.addEventListener("unload", bookmark.sendRequest);
+
+
+    function closeAllInfoWindows() {
+        for (var i=0;i<infoWindows.length;i++) {
+            infoWindows[i].close();
+        }
+    }
+    var infoWindows = [];
+    var markersCount = 0;
+    var markers = [];
+    function initializeMap() {
+        map = new google.maps.Map(document.getElementById('cataloMap'), {
+            zoom: 10,
+            center: new google.maps.LatLng('48.859268', '2.347404')
+        });
+        var maxLat = -99, maxLng = -99, minLat = 99, minLng = 99;
+                
+        if (markersCount > 1){
+            var rectangleAffichage = new google.maps.LatLngBounds();
+            zoom_top_left=new google.maps.LatLng(maxLat,minLng);
+            zoom_bottom_right=new google.maps.LatLng(minLat,maxLng);
+            rectangleAffichage.extend(zoom_top_left);
+            rectangleAffichage.extend(zoom_bottom_right);
+            map.fitBounds(rectangleAffichage);
+        }else{
+            map.setCenter(new google.maps.LatLng(maxLat,minLng));
+        }
+
+    }
+</script></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="../mentions-legales-2.html">Mentions légales</a></li><li><a href="../donnees-personnelles-2.html">Données personnelles</a></li><li><a href="../faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="../faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="../js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/catalogue-formation/254735 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:19 GMT -->
+</html>

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Mirrored from www.cezam.fr/animations-culturelles/prix-du-roman/laureats-prix-du-roman by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>    Lauréats prix du roman</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="../../favicon1820.ico?version=a60399fe" /><link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Kristi" rel="stylesheet" /><link rel="stylesheet" href="../../build/layout/cezam/css/main1820.css?version=a60399fe" /><script src="../../build/layout/cezam/js/main1820.js?version=a60399fe"></script><script>
+                $(document).ready(function() {
+
+                    $('.blocks .block-item').click(function(){
+                        var href = $(this).find('a.block-item-read-more').attr('href');
+                        if (href){
+                            window.location = href;
+                        }else{
+                            var href = $(this).find('a').attr('href');
+                            if (href) {
+                                window.location = href;
+                            }
+                        }
+                    });
+                    $('.events article').click(function(){
+                        var href = $(this).find('a').attr('href');
+                        if (href){
+                            window.location = href;
+                        }
+                    });
+                    $('.scrollTop').on('click', function(e){
+                        e.preventDefault();
+                        $('html, body').animate({scrollTop:0}, {duration: 500, easing: 'swing'});
+                    });
+                    $('.image-gallery').each(function() { // the containers for all your galleries
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            tLoading: 'Chargement ...',
+                            mainClass: 'mfp-img-mobile',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                            },
+                            image: {
+                                tError: '<a href="%url%">L\'image</a> ne peut pas être chargée.',
+//                                titleSrc: function(item) {
+//                                    return item.el.attr('title') + '<small>' + item.el.data('description') + '</small>';
+//                                }
+                            }
+                        });
+                    });
+                    $('.contextualWindowOpener').click(function(){
+                        var target = $(this).data('target');
+                        if (target){
+                            $(target).toggle();
+                        }
+                        return false;
+                    });
+                    $('.contextual-window .contextual-btn-close').click(function(){
+                        $(this).parent().parent().hide();
+                        return false;
+                    });
+                });
+            </script><script src="../../../consent.extrazimut.net/consent.js"></script></head><body class="cezam-body " style=""><header class="main-header"><div id="headerMenu-responsive"><a href="../../index.html" class="menu-logo"><img src="../../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Logo" /></a><div class="menu-page-title"><a href="../../choix-antenne.html" class="mobile-only"><img src="../../img/cezam/picto-france1820.png?version=a60399fe" class="picto" alt="France" /><span class="caret"></span></a></div><div class="menu-link-toggle"><div class="menu-label">MENU</div><div class="hamburger" id="hamburger-1"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div></div><div class="menu-items "><div class="container-menu"><div class="main-menu"><ul class="headerMenu-list "><li class="first"><a href="../../cezam.html">Accueil</a></li><li><a href="../../qui-sommes-nous-1.html">Qui sommes-nous ?</a></li><li><a href="../../formations-cse.html">Formations CSE</a></li><li><a href="../../assistance-technique-cse.html">Assistance technique CSE</a></li><li><a href="../../billetterie-cse.html">Billetterie CSE</a></li><li><a href="../../carte-cezam-1.html">Carte Cezam</a></li><li><a href="../../animations-culturelles-cse.html">Animations culturelles</a></li><li><a href="../../sorties-voyages-sejours.html">Sorties, voyages, séjours</a></li><li><a href="../../faq-elus-cse-1.html">FAQ élus CSE</a></li><li class="last"><a href="../../faq-carte-cezam-1.html">FAQ Carte Cezam</a></li></ul></div></div></div></div><section id="main-slider" class="carousel slide" data-ride="carousel"><div class="overlay-header"><a href="../../index.html"><img src="../../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /></a><br /></div><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"><div class="item main-slider-item" style="background-image: url(../../mediacenter/uploads/xxl/head-site-prix-roman-2024-1348-x-400.jpg)"></div></div></section><a name="body-top"></a><ul class="functions-menu functions-menu--mobile-bottom"><li><a href="../../login.html#body-top"><img src="../../img/cezam/discover/user1820.svg?version=a60399fe" class="picto" alt="User"/> Se connecter</a></li><li><a href="../../nous-trouver.html#body-top"><img src="../../img/cezam/discover/france1820.svg?version=a60399fe" class="picto" alt="France"/> Nous trouver</a></li><li><a href="../../contact.html#body-top"><img src="../../img/cezam/discover/phone1820.svg?version=a60399fe" class="picto" alt="Telephone"/> Nous contacter</a></li></ul><div class="overlay overlay-menu"></div></header><div class="main-container"><div class="basket-timer" id="orderTimer" onclick="window.location = '../../commande/panier.html'"><div class="time"></div>pour finaliser votre commande
+    <br><div class="text-center"><a href="../../commande/panier.html" class="btn btn-action btn-xs">Annuler la commande</a></div></div><script>
+            function displayOrderRemainingTime(){
+        var currentdate = new Date();
+        var remainingTime = parseInt(orderExpirationTime - (currentdate.getTime()/1000));
+        if (remainingTime > 0 ) {
+            str= parseInt(remainingTime/60);
+            if(remainingTime>300){
+                str+=' minutes';
+            }else{
+                remainingSeconds=Math.floor(remainingTime % 60);
+                if (remainingSeconds<10) remainingSeconds='0'+ remainingSeconds;
+                str+=' : '+ remainingSeconds;
+                $("#orderTimer .time").addClass('timer_alerte');
+            }
+            $("#orderTimer .time").html(str);
+            setTimeout("displayOrderRemainingTime()",1000);
+        }else{
+            $("#orderTimer").html('Votre panier a expiré');
+            window.location = '../../commande/panier.html';
+        }
+
+    }
+</script><div id="breadcrumb" class="container-fluid"><ul class="breadcrumb"><li><a href="../../index.html">Accueil</a></li><li><a href="../../animations-culturelles.html">Animations culturelles</a></li><li><a href="../prix-du-roman.html">Prix du Roman</a></li><li class="active">Lauréats Prix du Roman</li></ul></div><div class="container"><header><h1>Lauréats Prix du Roman</h1></header></div><div class="container"><p> </p><p><img src="../../mediacenter/uploads/m/2021-tiffany-mc-daniel.png" alt="2021 Tiffany mc daniel" width="399" height="306" class="media-pullLeft" /></p><p> </p><p> </p><p>Je tiens à vous remercier pour ce merveilleux prix. C’est un honneur ! Ma mère Betty et moi éprouvons toutes les deux beaucoup d’amour et de reconnaissance pour votre soutien !</p><p>Regarder l’interview de Tiffany McDaniel</p><p> </p><p> </p><p> </p><p><img src="../../mediacenter/uploads/m/2020-melissa-da-costa2.png" alt="2020 Melissa Da costa" width="399" height="306" class="media-pullLeft" /></p><p> </p><p> </p><p> </p><p>Que dire à part, merci ! Je sais que mon roman n’était pas le plus facile à lire ! Entre le nombre de pages plutôt conséquent, les soucis pour trouver des exemplaires à cause du confinement et la rupture de stock momentanée. Mais je suis ravie de voir que vous vous êtes tous accrochés et que mon roman vous a plu !</p><p>Accéder au replay de la remise de prix</p><p> </p><p> </p><p><br /><img src="../../mediacenter/uploads/m/2019-benoit-philippon.png" alt="2019 benoit philippon" width="400" height="307" style="float: left;" class="media-pullLeft" /></p><p>  <img src="../../mediacenter/uploads/s/guillemet.png" alt="Guillemet" width="32" height="26" /> </p><blockquote>J'ai eu le grand honneur de recevoir le Prix du Roman Cezam. C'est un prix assez dingue dont je ne dirai jamais assez de bien. Plus de 2000 votants à travers la France, une équipe en or qui m’a trimballé de médiathèques en lycées professionnels pour rencontrer des super lecteurs passionnés. Une année de virée qui se clôture par ce beau prix, et une tournée qui se poursuit : après Nancy, Le Mans, Angers, Nantes, Clermont, Paris. Bref, Metallica n'a qu'à bien se tenir, une tournée Cezam, c'est une tournée de rock star. Un grand merci aux lecteurs à travers la France. (...)</blockquote><p><em> Lettre à venir</em></p><p> </p><p style="padding-left: 30px;"> </p><p style="padding-left: 30px;"> </p><p style="padding-left: 30px;"> </p><p><img src="../../mediacenter/uploads/m/2018-colin-niel.png" alt="2018 colin niel" width="400" height="307" style="float: left;" class="media-pullLeft" /></p><p><img src="../../mediacenter/uploads/s/guillemet.png" alt="Guillemet" width="32" height="26" /> </p><blockquote>Un an déjà, le temps est passé très vite depuis la remise du prix Cezam, à laquelle je n’avais malheureusement pas pu participer. Vous écrire aujourd’hui, pour le lancement de la nouvelle édition, c’est se souvenir de l’aventure qu’a été pour moi ce prix si particulier. Je vous l’avoue, avant d’être sélectionné, je ne connaissais le prix Cezam que de nom, je n’avais qu’une vague idée de ce qu’il représentait. Quand mon éditrice m’en parlé, ma première surprise, ça a été le nombre de lecteurs qu’elle m’annonçait : plus de 2000 ! Je n’en revenais pas, qu’un prix de cette ampleur n’ait pas plus de renommée auprès du grand public. (...)</blockquote><p><strong>Lire la lettre en totalité : </strong></p><p><span class="glyphicon glyphicon-glyphicon glyphicon-pro glyphicon-pro-notes"></span><a href="../../mediacenter/uploads/lettre-colin-niel-2018.pdf" target="_blank">Lettre Colin Niel lauréat 2018</a></p><p> </p><p> </p><p><img src="../../mediacenter/uploads/m/2017-hubert-francois.png" alt="2017 hubert françois" width="400" height="307" style="float: left;" class="media-pullLeft" /></p><p><img src="../../mediacenter/uploads/s/guillemet.png" alt="Guillemet" width="32" height="26" /></p><blockquote>C’est un grand plaisir de revenir vers vous, un an après. Vous le savez si vous étiez là, j’ai vécu la cérémonie avec beaucoup d’émotion l’année passée, et j’en garde un magnifique souvenir. Cette récompense, mais aussi toutes les rencontres qui l’ont accompagnée, m’ont énormément apporté : seuls les lecteurs, et peut-être le temps qui passe, peuvent dire d’un livre qu’il est réussi, ou pas. Vos votes, et l’ensemble de vos réactions au fil des mois, m’ont poussé à endosser un statut – auteur de roman - avec lequel je n’étais guère à l’aise. Quand mon prochain roman sortira, vous y serez pour quelque chose. (...)</blockquote><p><strong> Lire la lettre en totalité :</strong></p><p> <span class="glyphicon glyphicon-glyphicon glyphicon-pro glyphicon-pro-notes"></span><a href="../../mediacenter/uploads/lettre-hubert-francois-2017.pdf" target="_blank">Lettre Hubert François lauréat 2017</a></p><p> </p><p> </p><p><img src="../../mediacenter/uploads/m/2016-valentina-durbano.png" alt="2016 valentina durbano" width="400" height="307" style="float: left;" class="media-pullLeft" /></p><p><img src="../../mediacenter/uploads/s/guillemet.png" alt="Guillemet" width="32" height="26" /></p><blockquote>Lorsqu’un de mes livres est traduit à l’étranger, je me sens toujours quelque peu désorientée du sort de ce roman. Je veux dire qu’en Italie mon livre parle ma langue et mes lecteurs m’écrivent pour me manifester leur affection. C'est un peu comme être chez eux, entre amis. Mais quand le livre sort des frontières nationales, il devient presque un saut dans l'obscurité, un saut passionnant dans le noir. Parce qu'une histoire traduite non seulement commence à parler une autre langue mais trouve de nouveaux lecteurs. (...)</blockquote><p><strong>Lire la lettre en totalité :</strong></p><p><span class="glyphicon glyphicon-glyphicon glyphicon-pro glyphicon-pro-notes"></span><a href="../../mediacenter/uploads/lettre-valentina-d%27urbano-2016.pdf" target="_blank">Lettre Valentina d'Urbano lauréat 2016</a> </p><p> </p><p> </p><p> </p><p><img src="../../mediacenter/uploads/m/2015-jp-didierlaurent.png" alt="2015 jp didierlaurent" width="400" height="307" style="float: left;" class="media-pullLeft" /></p><p><img src="../../mediacenter/uploads/s/guillemet.png" alt="Guillemet" width="32" height="26" /></p><blockquote>Si l'on me demande ce que je retiens du prix Cezam, les premières choses qui me viennent à l'esprit sont d'abord des endroits. Là, une médiathèque, ici, une entreprise, ailleurs, un hôpital, plus tard, une chambre d'agriculture, plus loin, une préfecture, là-bas un café. Dans des villes comme Angers, Nantes, Mulhouse, Strasbourg, Colmar, Bourg-en-Bresse, Nancy, Lorient, Paris, Annecy ou Lyon. Alors, avec ces villes et ces endroits, surgissent à mon esprit les visages. Ceux de Catherine, Marie, Joëlle, Florence, Jeanne, Nassera, Yann, Dominique, Denise, Michel et tant d'autres dont j'ai oublié le prénom et qui sont le cœur du prix. (...)</blockquote><p><strong> Lire la lettre en totalité :</strong></p><p> <span class="glyphicon glyphicon-glyphicon glyphicon-pro glyphicon-pro-notes"></span><a href="../../mediacenter/uploads/lettre-jean-paul-didierlaurent-2015.pdf" target="_blank">Lettre Jean Paul Didierlaurent lauréat 2015</a></p><p> </p><p> </p><p><img src="../../mediacenter/uploads/m/2014-gilles-vincent.png" alt="2014 gilles vincent" width="400" height="307" style="float: left;" class="media-pullLeft" /></p><p><img src="../../mediacenter/uploads/s/guillemet.png" alt="Guillemet" width="32" height="26" /></p><blockquote>Il faut plus de vingt ans, que dis-je, trente ans au moins pour collecter les rencontres précieuses.  Noter dans son carnet les noms et les prénoms de celles et ceux dont on se souvient longtemps. Des visages, des voix, des sourires qui ne parviennent à s'effacer... Aussi, ce soir, orphelin de vous tous, loin du Nord qui m'a vu naître et grandir, ce soir, en manque de cette soirée d'applaudissements, de reconnaissance, de bienveillance aussi, ce soir me reste le souvenir indélébile de vos silhouettes... (...)</blockquote><p><strong> Lire la lettre en totalité :</strong></p><p> <span class="glyphicon glyphicon-glyphicon glyphicon-pro glyphicon-pro-notes"></span><a href="../../mediacenter/uploads/lettre-gilles-vincent-2014.pdf" target="_blank">Lettre Gilles Vincent lauréat 2014</a></p><p> </p><p> </p><p> </p><p><img src="../../mediacenter/uploads/m/2013-elene-gestern-.png" alt="2013 elene gestern " width="400" height="307" style="float: left;" class="media-pullLeft" /></p><p><img src="../../mediacenter/uploads/s/guillemet.png" alt="Guillemet" width="32" height="26" /></p><blockquote>Vous êtes sélectionnée pour le prix Cezam, c'est une excellente nouvelle !" m'a annoncé mon éditrice, un jour. J'ignorais encore à quel point elle aurait raison. Moi qui aime les voyages, j'ai voyagé. Et pas seulement dans les trains. J'ai voyagé dans des lieux, des paysages, et surtout parmi les mots de tous ceux qui m'ont accueillie. Ils n'avaient pas le même âge, pas le même métier, et les raisons qui les menaient à la lecture étaient multiples : mais tous partageaient ce goût, cette ferveur, cette envie de se réunir autour de quelque chose qui allait les faire s'évader, réfléchir ou rêver, les livres. (...)</blockquote><p><strong>Lire la lettre en totalité :</strong></p><p><span class="glyphicon glyphicon-glyphicon glyphicon-pro glyphicon-pro-notes"></span><a href="../../mediacenter/uploads/lettre-helene-gestern-2013.pdf" target="_blank">Lettre Hélène Gestern lauréat 2013</a></p></div></div><footer class="main-footer"><div class="footer-content"><div  class="main-footer-logo"><img src="../../img/cezam/logo-cezam-blanc1820.png?version=a60399fe" alt="Cezam" class="logo-cezam" /><br /></div><div class="main-footer-menu"><ul><li><a href="../../mentions-legales-2.html">Mentions légales</a></li><li><a href="../../donnees-personnelles-2.html">Données personnelles</a></li><li><a href="../../faq-elus-cse.html">FAQ élus CSE</a></li><li><a href="../../faq-carte-cezam.html">FAQ carte Cezam</a></li></ul><div class="main-footer-logos"><br></div></div></div><a href="#" class="scrollTop"></a></footer><script>
+                azimutConsentManager.create({
+                    consent: {
+                        required: {},
+                        gtag: {measurementId: 'G-VGRMT4MRM1'}
+                    },
+                    privacyUrl: 'https://www.cezam.fr/donnees-personnelles-2',
+                });
+            </script><script src="../../js/catalog1820.js?version=a60399fe"></script><script>
+                $(document).ready(function(){
+                    $(".menu-link-toggle").click(function(){
+                        $("#hamburger-1").toggleClass("is-active");
+                        $(".menu-items").toggleClass("menu-toggleshow");
+                        $("header .overlay-menu").toggle();
+                    });
+                    $("header .overlay-menu").click(function(){
+                        $(".menu-link-toggle").first().trigger('click');
+                    });
+
+                    $(".overlay-search-toggle").click(function(){
+                        $('.overlay-search').hide();
+                    });
+
+                    $('[data-toggle="tooltip"]').tooltip();
+
+                    $(document).scroll(function(){
+                        if($(this).scrollTop() > 450){
+                            $('.scrollTop').show();
+                            $('#headerMenu-responsive .menu-link-toggle').addClass('negative');
+                        }else{
+                            $('.scrollTop').hide();
+                            $('#headerMenu-responsive .menu-link-toggle').removeClass('negative');
+                        }
+                    });
+
+                });
+
+
+                function displaySearch(){
+                    $('.overlay-search').show();
+                }
+
+                $('.carousel').each(function(){
+                    var id = $(this).attr('id');
+                    $(this).find('.main-slider-item').each(function (index) {
+                        if(index == 0){
+                            $(this).parent().parent().find('.carousel-indicators').append("<li class=\"active\" data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }else{
+                            $(this).parent().parent().find('.carousel-indicators').append("<li data-target=\"#"+ id +"\" data-slide-to=\""+index+"\"></li>");
+                        }
+                    });
+                });
+                $('.carousel .main-slider-item:nth-child(1)').addClass('active');
+                $('.carousel').carousel();
+            </script></body>
+<!-- Mirrored from www.cezam.fr/animations-culturelles/prix-du-roman/laureats-prix-du-roman by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Mar 2024 13:51:46 GMT -->
+</html>
